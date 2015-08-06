@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Anggota;
+use App\User;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
@@ -17,11 +18,7 @@ class AnggotaController extends Controller
      */
     public function index()
     {
-        $data = Anggota::get([
-            'NIP',
-            'nama',
-            'jabatan'
-        ])->toArray();
+        $data = Anggota::all();
         //return view('pre', compact('data'));
         return view('anggota.index', compact('data'));
     }
@@ -44,9 +41,18 @@ class AnggotaController extends Controller
      */
     public function store(Request $request)
     {
-        $fill = $request->all();
-        Anggota::create($fill);
-        //dd($fill);
+        $data = $request->all();
+        $fill1['name'] = $data['nip'];
+        $fill1['email'] = $data['email'];
+        $fill1['password'] = bcrypt($data['password']) ;
+
+        $fill2['nip'] = $data['nip'];
+        $fill2['nama'] = $data['nama'];
+        $fill2['jabatan'] = $data['jabatan'];
+
+ //       dd($fill1,$fill2);
+        User::create($fill1);
+        Anggota::create($fill2);
         return redirect()->action('AnggotaController@index');
     }
 
