@@ -66,7 +66,7 @@
                             </table>
                         </div>
                     </div>
-                    {{--{{Form::old('barpo')}}--}}
+                    {{Form::old('barpo')}}
                     <div class="form-group">
                         <div class="col-md-offset-10 col-md-2">
                             <button type="submit" class="btn btn-primary btn-block">
@@ -93,9 +93,9 @@
                                     .append('<option value="{{$row['id']}}">{{$row['id'].' - '.$row['nama']}}</option>')
                             @endforeach
                             ),
-                            $("<td />").append('<input type="text" class="form-control qty" name="barpo['+ iter +'][kuantitas]">'),
+                            $("<td />").append('<input type="text" class="form-control" name="barpo['+ iter +'][kuantitas]">'),
                             $("<td />").append('<input data-provide="datepicker" class="datepicker form-control" placeholder="2017-12-31" name="barpo['+ iter +'][tanggal_butuh]">'),
-                            $("<td />").append('<button type="button" class="btn btn-sm btn-danger delete-column glyphicon glyphicon-remove"></button>').click(function() {
+                            $("<td class='text-center' />").append('<button type="button" class="btn btn-sm btn-danger delete-column glyphicon glyphicon-remove"></button>').click(function() {
                                 $(this).parent().remove();
                             })
                     ));
