@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Barang;
 use Illuminate\Http\Request;
 
-use App\Pesanan;
+use App\PesananBarang;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
@@ -15,7 +15,7 @@ class PesananController extends Controller
     protected $pesanan;
 
 
-    public function __construct(Pesanan $pesanan)
+    public function __construct(PesananBarang $pesanan)
     {
         $this->pesanan = $pesanan;
     }
@@ -28,7 +28,7 @@ class PesananController extends Controller
     public function index()
     {
 
-        $data = Pesanan::all();
+        $data = PesananBarang::all();
         return view('aktivitas.pesanan.index', compact('data'));
     }
 

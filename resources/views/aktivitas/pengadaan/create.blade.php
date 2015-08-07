@@ -17,10 +17,8 @@
 @section('content')
     <div class="well well-sm">
         <ul class="nav nav-pills nav-justified">
-            <li>{!!link_to('Pengadaan
-                /index','List')!!}</li>
-            <li class="active">{!!link_to('Pengadaan
-                /create','Tambah')!!}</li>
+            <li>{!!link_to('pengadaan/index','List')!!}</li>
+            <li class="active">{!!link_to('pengadaan/create','Tambah')!!}</li>
         </ul>
     </div>
     <div class="row">
