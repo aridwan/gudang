@@ -37,6 +37,10 @@
                         </div>
                     @endif
                     <div class="form-group">
+                        <label class="col-md-2 control-label">Nomor Pesanan</label>
+                        <label class="col-md-1 control-label">PS-{{$id}}</label>
+                    </div>
+                    <div class="form-group">
                         <label class="col-md-2 control-label">Pemesan</label>
                         <div class="col-md-3">
                             <input class="form-control" name="pemesan" value="{{Auth::user()->name}}" readonly>

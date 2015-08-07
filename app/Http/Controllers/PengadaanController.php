@@ -2,22 +2,20 @@
 
 namespace App\Http\Controllers;
 
-use App\Barang;
 use Illuminate\Http\Request;
-
-use App\PesananBarang;
+use App\PengadaanBarang;
+use App\Barang;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
-class PesananController extends Controller
+class PengadaanController extends Controller
 {
+    protected $pengadaan;
 
-    protected $pesanan;
 
-
-    public function __construct(PesananBarang $pesanan)
+    public function __construct(PengadaanBarang $pengadaan)
     {
-        $this->pesanan = $pesanan;
+        $this->pengadaan = $pengadaan;
     }
 
     /**
@@ -27,9 +25,9 @@ class PesananController extends Controller
      */
     public function index()
     {
-
-        $data = PesananBarang::all();
-        return view('aktivitas.pesanan.index', compact('data'));
+        $data = PengadaanBarang::all();
+        return view('aktivitas.pengadaan.index', compact('data'));
+        //
     }
 
     /**
@@ -40,11 +38,14 @@ class PesananController extends Controller
     public function create()
     {
 
-        $id = $this->pesanan->max('id');
+        $id = $this->pengadaan->max('id');
         $id = $id === null ? 1 : $id + 1;
 
+
         $data = Barang::all();
-        return view('aktivitas.pesanan.create', compact('data','id'));
+        return view('aktivitas.pengadaan.create', compact('data','id'));
+
+        //
     }
 
     /**

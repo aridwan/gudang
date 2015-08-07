@@ -17,9 +17,18 @@ class AnggotaController extends Controller
      * @return Response
      */
     public function index()
-    {
-        $data = Anggota::all();
+    { 
+
+        $data = Anggota::get([
+            'id',
+            'nip',
+            'nama',
+            'jabatan'
+
+        ])->toArray();
+
         //return view('pre', compact('data'));
+      
         return view('anggota.index', compact('data'));
     }
 
