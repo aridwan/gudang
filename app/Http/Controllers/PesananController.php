@@ -11,6 +11,15 @@ use App\Http\Controllers\Controller;
 
 class PesananController extends Controller
 {
+
+    protected $pesanan;
+
+
+    public function __construct(Pesanan $pesanan)
+    {
+        $this->pesanan = $pesanan;
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -18,6 +27,7 @@ class PesananController extends Controller
      */
     public function index()
     {
+
         $data = Pesanan::all();
         return view('aktivitas.pesanan.index', compact('data'));
     }
@@ -29,8 +39,12 @@ class PesananController extends Controller
      */
     public function create()
     {
+
+        $id = $this->pesanan->max('id');
+        $id = $id === null ? 1 : $id + 1;
+
         $data = Barang::all();
-        return view('aktivitas.pesanan.create', compact('data'));
+        return view('aktivitas.pesanan.create', compact('data','id'));
     }
 
     /**
