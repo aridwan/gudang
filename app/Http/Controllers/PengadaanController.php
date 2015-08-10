@@ -5,17 +5,21 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\PengadaanBarang;
 use App\Barang;
+use App\BarangTerima;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
 class PengadaanController extends Controller
 {
-    protected $pengadaan;
+    protected $pengadaanBarang;
+    protected $barang;
+    protected $barangTerima;
 
-
-    public function __construct(PengadaanBarang $pengadaan)
+    public function __construct(PengadaanBarang $pengadaan, Barang $barang, BarangTerima $barangTerima)
     {
-        $this->pengadaan = $pengadaan;
+        $this->pengadaanBarang = $pengadaan;
+        $this->barang = $barang;
+        $this->barangTerima = $barangTerima;
     }
 
     /**
@@ -38,10 +42,8 @@ class PengadaanController extends Controller
     public function create()
     {
 
-        $id = $this->pengadaan->max('id');
+        $id = $this->pengadaanBarang->max('id');
         $id = $id === null ? 1 : $id + 1;
-
-
         $data = Barang::all();
         return view('aktivitas.pengadaan.create', compact('data','id'));
 
@@ -56,7 +58,21 @@ class PengadaanController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $all = $request->all();
+//         dd($all);
+
+        $pengadaanFill = $this->pengadaanBarang->getFillable();
+        $pengadaan = $this->pengadaanBarang->firstOrCreate($request->only($pengadaanFill));
+
+        // dd($all);
+        foreach($all['barpeng'] as $barpeng) {
+            $addedItem = Barang::find($barpeng['barang_id']);
+            $addedItem['kuantitas'] += $barpeng['kuantitas'];
+            Barang::find($barpeng['barang_id'])->update($addedItem->toArray());
+            $barang_id = array_pull($barpeng, 'barang_id');
+            $pengadaan->barangs()->attach($barang_id, $barpeng);
+        }
+        return redirect('pengadaan/index');
     }
 
     /**

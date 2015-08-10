@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreatePengadaanBarangsTable extends Migration
+class CreateBarangTerimasTable extends Migration
 {
     /**
      * Run the migrations.
@@ -12,11 +12,11 @@ class CreatePengadaanBarangsTable extends Migration
      */
     public function up()
     {
-        Schema::create('pengadaan_barangs', function (Blueprint $table) {
+        Schema::create('barang_terimas', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('penerima');
-            $table->date('tanggal');
-            $table->string('catatan');
+            $table->integer('pengadaan_barang_id');
+            $table->integer('barang_id');
+            $table->integer('kuantitas');
             $table->timestamps();
         });
     }
@@ -28,6 +28,6 @@ class CreatePengadaanBarangsTable extends Migration
      */
     public function down()
     {
-        Schema::drop('pengadaan_barangs');
+        Schema::drop('barang_terimas');
     }
 }

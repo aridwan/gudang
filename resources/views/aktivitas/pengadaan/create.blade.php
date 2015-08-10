@@ -10,8 +10,7 @@
 @endsection
 
 @section('title')
-    Pengadaan
-     Barang
+    Pengadaan Barang
 @endsection
 
 @section('content')
@@ -22,13 +21,11 @@
         </ul>
     </div>
     <div class="row">
-        <div class="col-md-10 col-md-offset-1">
+        <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">
-                <div class="panel-heading">Form Pengadaan
-                 Barang</div>
+                <div class="panel-heading">Form Pengadaan Barang</div>
                 <div class="panel-body">
-                    {!! Form::open(['url' => 'Pengadaan
-                    /store', 'class' => 'form-horizontal']) !!}
+                    {!! Form::open(['url' => 'pengadaan/store', 'class' => 'form-horizontal']) !!}
                     @if (count($errors) > 0)
                         <div class="alert alert-danger">
                             <strong>Whoops!</strong> There were some problems with your input.<br><br>
@@ -66,15 +63,14 @@
                         <div class="col-md-12">
                             <table class="table table-striped" id="tabelForm">
                                 <tr>
-                                    <th>Kode Barang</th>
-                                    <th>Kuantitas</th>
-                                    <th>Tanggal dibutuhkan</th>
+                                    <th class="text-center">Kode Barang</th>
+                                    <th class="text-center">Kuantitas</th>
                                     <th class="text-center"><button type="button" class="btn btn-sm btn-default btn-tambah glyphicon glyphicon-plus"></button></th>
+                                    <th></th>
                                 </tr>
                             </table>
                         </div>
                     </div>
-                    {{--{{Form::old('barpo')}}--}}
                     <div class="form-group">
                         <div class="col-md-offset-10 col-md-2">
                             <button type="submit" class="btn btn-primary btn-block">
@@ -96,14 +92,13 @@
         function appendRow() {
             $("#tabelForm").append($("<tr />").append(
                     $("<td />").append(
-                            $('<select class="form-control" name="barpo['+ iter +'][barang_id]" />')
+                            $('<select class="form-control" name="barpeng['+ iter +'][barang_id]" />')
                                     @foreach($data as $row)
                                     .append('<option value="{{$row['id']}}">{{$row['id'].' - '.$row['nama']}}</option>')
                             @endforeach
-                            ),
-                            $("<td />").append('<input type="text" class="form-control qty" name="barpo['+ iter +'][kuantitas]">'),
-                            $("<td />").append('<input data-provide="datepicker" class="datepicker form-control" placeholder="2017-12-31" name="barpo['+ iter +'][tanggal_butuh]">'),
-                            $("<td />").append('<button type="button" class="btn btn-sm btn-danger delete-column glyphicon glyphicon-remove"></button>').click(function() {
+                        ),
+                            $("<td />").append('<input type="text" class="form-control" name="barpeng['+ iter +'][kuantitas]">'),
+                            $("<td class='text-center'/>").append('<button type="button" class="btn btn-sm btn-danger delete-column glyphicon glyphicon-remove"></button>').click(function() {
                                 $(this).parent().remove();
                             })
                     ));

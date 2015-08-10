@@ -37,8 +37,6 @@ Route::group(['middleware' => ['auth']], function() {
     Route::get('pesanan/edit/{id}', 'PesananController@edit');
     Route::post('pesanan/update/{id}', 'PesananController@update');
     Route::get('pesanan/show/{id}', 'PesananController@show');
-    
-
 
     Route::get('pengadaan/index', 'PengadaanController@index');
     Route::get('pengadaan/create', 'PengadaanController@create');
