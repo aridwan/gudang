@@ -18,7 +18,7 @@
                             <th class="text-center">Nama</th>
                             <th class="text-center">Kuantitas</th>
                             <th class="text-center">Keterangan</th>
-                            <th class="text-center">pilihan</th>
+                            <th class="text-center">Pilihan</th>
                         </tr>
                         @foreach($data as $row)
                             <tr class="text-center">
@@ -27,8 +27,8 @@
                                 <td>{{$row['kuantitas']}}</td>
                                 <td>{{$row['keterangan']}}</td>
                                 <td class="text-center">
-                                    {!!link_to('barang/edit/'.$row['id'], 'edit', ['class' => 'btn btn-primary btn-sm'])!!}
-                                    {!!link_to('barang/destroy/'.$row['id'], 'hapus', ['class' => 'btn btn-danger btn-sm'])!!}
+                                    {!!link_to('barang/edit/'.$row['id'], 'Ubah', ['class' => 'btn btn-primary btn-sm'])!!}
+                                    {!!link_to('barang/destroy/'.$row['id'], 'Hapus', ['class' => 'btn btn-danger btn-sm'])!!}
                                 </td>
                             </tr>
                         @endforeach

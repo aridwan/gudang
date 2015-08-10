@@ -25,8 +25,8 @@
                                 <td>{{$row['nama']}}</td>
                                 <td>{{$row['jabatan']}}</td>
                                 <td class="text-center">
-                                    {!!link_to('anggota/edit/'.$row['id'], 'edit', ['class' => 'btn btn-primary btn-sm'])!!}
-                                    {!!link_to('anggota/destroy/'.$row['id'], 'hapus', ['class' => 'btn btn-danger btn-sm'])!!}
+                                    {!!link_to('anggota/edit/'.$row['id'], 'Ubah', ['class' => 'btn btn-primary btn-sm'])!!}
+                                    {!!link_to('anggota/destroy/'.$row['id'], 'Hapus', ['class' => 'btn btn-danger btn-sm'])!!}
                                 </td>
                             </tr>
                         @endforeach
