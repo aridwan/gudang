@@ -80,7 +80,8 @@ class PesananController extends Controller
      */
     public function show($id)
     {
-        //
+        $pesananBarang=$this->pesananBarang->find($id);
+        return view('aktivitas/pesanan/show',compact('pesananBarang'));
     }
 
     /**
