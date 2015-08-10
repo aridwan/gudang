@@ -83,7 +83,9 @@ class PengadaanController extends Controller
      */
     public function show($id)
     {
-        //
+        
+        $pengadaanBarang=$this->pengadaanBarang->find($id);
+        return view('aktivitas/pengadaan/show',compact('pengadaanBarang'));
     }
 
     /**
