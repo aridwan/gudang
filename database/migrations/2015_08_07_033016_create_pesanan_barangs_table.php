@@ -14,6 +14,9 @@ class CreatePesananBarangsTable extends Migration
     {
         Schema::create('pesanan_barangs', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('pemesan');
+            $table->date('tanggal');
+            $table->string('catatan');
             $table->timestamps();
         });
     }

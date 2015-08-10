@@ -6,18 +6,23 @@ use App\Barang;
 use Illuminate\Http\Request;
 
 use App\PesananBarang;
+use App\BarangTerpesan;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
 class PesananController extends Controller
 {
 
-    protected $pesanan;
+    protected $pesananBarang;
+    protected $barangPesanan;
+    protected $barang;
 
 
-    public function __construct(PesananBarang $pesanan)
+    public function __construct(PesananBarang $pesanan, Barang $barang, BarangTerpesan $barangPesanan)
     {
-        $this->pesanan = $pesanan;
+        $this->pesananBarang = $pesanan;
+        $this->barangPesanan = $barangPesanan;
+        $this->barang = $barang;
     }
 
     /**
@@ -27,7 +32,6 @@ class PesananController extends Controller
      */
     public function index()
     {
-
         $data = PesananBarang::all();
         return view('aktivitas.pesanan.index', compact('data'));
     }
@@ -39,8 +43,7 @@ class PesananController extends Controller
      */
     public function create()
     {
-
-        $id = $this->pesanan->max('id');
+        $id = $this->pesananBarang->max('id');
         $id = $id === null ? 1 : $id + 1;
 
         $data = Barang::all();
@@ -55,7 +58,18 @@ class PesananController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $all = $request->all();
+//         dd($all['barpes']);
+
+        $pesananFill = $this->pesananBarang->getFillable();
+        $pesanan = $this->pesananBarang->firstOrCreate($request->only($pesananFill));
+
+        // dd($all);
+        foreach($all['barpes'] as $barpes) {
+            $barang_id = array_pull($barpes, 'barang_id');
+            $pesanan->barangs()->attach($barang_id, $barpes);
+        }
+        return redirect('pesanan/index');
     }
 
     /**

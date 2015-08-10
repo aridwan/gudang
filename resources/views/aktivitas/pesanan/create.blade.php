@@ -39,6 +39,7 @@
                     <div class="form-group">
                         <label class="col-md-2 control-label">Nomor Pesanan</label>
                         <label class="col-md-1 control-label">PS-{{$id}}</label>
+                        <input class="form-control hidden" name="pesanan_barang_id" value="{{$id}}">
                     </div>
                     <div class="form-group">
                         <label class="col-md-2 control-label">Pemesan</label>
@@ -70,7 +71,7 @@
                             </table>
                         </div>
                     </div>
-                    {{Form::old('barpo')}}
+                    {{Form::old('barpes')}}
                     <div class="form-group">
                         <div class="col-md-offset-10 col-md-2">
                             <button type="submit" class="btn btn-primary btn-block">
@@ -92,13 +93,13 @@
         function appendRow() {
             $("#tabelForm").append($("<tr />").append(
                     $("<td />").append(
-                            $('<select class="form-control" name="barpo['+ iter +'][barang_id]" />')
-                                    @foreach($data as $row)
+                            $('<select class="form-control" name="barpes['+ iter +'][barang_id]" />')
+                                @foreach($data as $row)
                                     .append('<option value="{{$row['id']}}">{{$row['id'].' - '.$row['nama']}}</option>')
-                            @endforeach
+                                @endforeach
                             ),
-                            $("<td />").append('<input type="text" class="form-control" name="barpo['+ iter +'][kuantitas]">'),
-                            $("<td />").append('<input data-provide="datepicker" class="datepicker form-control" placeholder="2017-12-31" name="barpo['+ iter +'][tanggal_butuh]">'),
+                            $("<td />").append('<input type="text" class="form-control" name="barpes['+ iter +'][kuantitas]">'),
+                            $("<td />").append('<input data-provide="datepicker" class="datepicker form-control" placeholder="2017-12-31" name="barpes['+ iter +'][tanggal_butuh]">'),
                             $("<td class='text-center' />").append('<button type="button" class="btn btn-sm btn-danger delete-column glyphicon glyphicon-remove"></button>').click(function() {
                                 $(this).parent().remove();
                             })

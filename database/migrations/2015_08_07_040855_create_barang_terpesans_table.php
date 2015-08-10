@@ -14,6 +14,10 @@ class CreateBarangTerpesansTable extends Migration
     {
         Schema::create('barang_terpesans', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('pesanan_barang_id');
+            $table->integer('barang_id');
+            $table->integer('kuantitas');
+            $table->date('tanggal_butuh');
             $table->timestamps();
         });
     }
