@@ -25,7 +25,7 @@
                 <div class="form-group">
                     <label class="col-md-4 control-label">Nama Barang</label>
                     <div class="col-md-6">
-                        <input class="form-control" placeholder="Nama" name="nama" type="text">
+                        <input class="form-control" placeholder="Nama Barang" name="nama" type="text">
                     </div>
                 </div>
                 <div class="form-group">
@@ -37,7 +37,7 @@
                 <div class="form-group">
                     <label class="col-md-4 control-label">Keterangan </label>
                     <div class="col-md-6">
-                        <input class="form-control" placeholder="keterangan" name="keterangan" type="text">
+                        <input class="form-control" placeholder="Keterangan" name="keterangan" type="text">
                     </div>
                 </div>
                 <div class="form-group">

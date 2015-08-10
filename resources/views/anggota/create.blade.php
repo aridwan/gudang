@@ -32,7 +32,7 @@
                     <div class="form-group">
                         <label class="col-md-4 control-label">Nama Anggota</label>
                         <div class="col-md-6">
-                            <input class="form-control" placeholder="Nama" name="nama" type="text">
+                            <input class="form-control" placeholder="Nama Anggota" name="nama" type="text">
                         </div>
                     </div>
                     <div class="form-group">
@@ -56,7 +56,7 @@
                     <div class="form-group">
                         <label class="col-md-4 control-label">Confirm Password</label>
                         <div class="col-md-6">
-                            <input class="form-control" placeholder="confirm" name="confirm_password" type="password">
+                            <input class="form-control" placeholder="Confirm Password" name="confirm_password" type="password">
                         </div>
                     </div>
                     <div class="form-group">
