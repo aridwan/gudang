@@ -27,7 +27,7 @@
                                 <td>{{$row['kuantitas']}}</td>
                                 <td>{{$row['keterangan']}}</td>
                                 <td class="text-center">
-                                    {!!link_to('barang/edit/'.$row['id'], 'edit', ['class' => 'btn btn-primary btn-sm'])!!}
+                                    {!!link_to('barang/edit/'.$row['id'], 'ubah', ['class' => 'btn btn-primary btn-sm'])!!}
                                     {!!link_to('barang/destroy/'.$row['id'], 'hapus', ['class' => 'btn btn-danger btn-sm'])!!}
                                 </td>
                             </tr>
