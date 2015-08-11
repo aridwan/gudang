@@ -11,6 +11,11 @@
             <br>
             <div class="panel panel-default">
                 <div class="panel-heading">Home</div>
+
+                <div class="col-md-4 col-md-offset-4">
+                    
+                </div>
+                
                 @if(Auth::check())
                     <div class="panel-body  col-md-2 col-md-offset-5">
                         <img  src="http://localhost:8000/images/Lamp1.jpg">
@@ -24,9 +29,17 @@
                         </marquee>
                     </div>
                 @else
-                    <div class="panel-body">
+
+                <div class="panel-body"> 
+                    <div class="col-md-4 col-md-offset-4">
+                    <span><img src="http://localhost:8000/images/Cover.jpg"></span>
+                    </div>
+                    <div class="col-md-2 col-md-offset-6">    
                         Please login!
                     </div>
+
+                </div>
+
                 @endif
             </div>
         </div>
