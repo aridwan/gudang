@@ -45,6 +45,10 @@ Route::group(['middleware' => ['auth']], function() {
     Route::get('pengadaan/edit/{id}', 'PengadaanController@edit');
     Route::post('pengadaan/update/{id}', 'PengadaanController@update');
     Route::get('pengadaan/show/{id}', 'PengadaanController@show');
+
+    Route::get('guest_barang/index', 'UserController@barang');
+    Route::get('guest_anggota/index', 'UserController@anggota');
+    Route::get('guest_pesanan/index', 'UserController@pesanan');
 });
 
 //Custom Auth

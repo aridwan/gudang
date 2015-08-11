@@ -25,11 +25,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="edit.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/anggota/edit.blade.php">
+      <file leaf-file-name="app.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/app.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-14.153846" vertical-offset="346" max-vertical-offset="1122">
-              <caret line="42" column="44" selection-start-line="42" selection-start-column="44" selection-end-line="42" selection-end-column="44" />
+            <state vertical-scroll-proportion="-7.1153846" vertical-offset="1260" max-vertical-offset="2533">
+              <caret line="85" column="33" selection-start-line="85" selection-start-column="33" selection-end-line="85" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-19.384615" vertical-offset="193" max-vertical-offset="1054">
+              <caret line="50" column="64" selection-start-line="50" selection-start-column="64" selection-end-line="50" selection-end-column="64" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UserController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-3.9230769" vertical-offset="0" max-vertical-offset="1819">
+              <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -38,18 +58,68 @@
       <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/anggota/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.461538" vertical-offset="0" max-vertical-offset="833">
-              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+            <state vertical-scroll-proportion="-11.230769" vertical-offset="252" max-vertical-offset="833">
+              <caret line="32" column="21" selection-start-line="0" selection-start-column="0" selection-end-line="43" selection-end-column="11" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.blade.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/views/app.blade.php">
+      <file leaf-file-name="guest_anggota.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/guest/guest_anggota.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5295203" vertical-offset="393" max-vertical-offset="2533">
-              <caret line="40" column="123" selection-start-line="40" selection-start-column="123" selection-end-line="40" selection-end-column="123" />
+            <state vertical-scroll-proportion="0.26486486" vertical-offset="176" max-vertical-offset="748">
+              <caret line="19" column="62" selection-start-line="19" selection-start-column="62" selection-end-line="19" selection-end-column="62" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/barang/index.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-7.9615383" vertical-offset="252" max-vertical-offset="833">
+              <caret line="27" column="42" selection-start-line="0" selection-start-column="0" selection-end-line="43" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="guest_barang.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/guest/guest_barang.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-3.9230769" vertical-offset="0" max-vertical-offset="748">
+              <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AuthenticatesUsers.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Auth/AuthenticatesUsers.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-10.461538" vertical-offset="1785" max-vertical-offset="2686">
+              <caret line="124" column="29" selection-start-line="124" selection-start-column="29" selection-end-line="124" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HomeController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-20.038462" vertical-offset="635" max-vertical-offset="1564">
+              <caret line="71" column="0" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-12.192307" vertical-offset="57" max-vertical-offset="680">
+              <caret line="22" column="34" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -87,26 +157,28 @@
         <option value="$PROJECT_DIR$/database/migrations/2015_08_07_033038_create_pengadaan_barangs_table.php" />
         <option value="$PROJECT_DIR$/app/BarangTerima.php" />
         <option value="$PROJECT_DIR$/app/PengadaanBarang.php" />
-        <option value="$PROJECT_DIR$/app/Http/routes.php" />
         <option value="$PROJECT_DIR$/resources/views/aktivitas/pengadaan/create.blade.php" />
         <option value="$PROJECT_DIR$/database/migrations/2015_08_10_043128_create_barang_terimas_table.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/PengadaanController.php" />
-        <option value="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Auth/AuthenticatesUsers.php" />
         <option value="$PROJECT_DIR$/resources/views/auth/login.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/aktivitas/pesanan/show.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/aktivitas/pengadaan/show.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/aktivitas/pesanan/create.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Requests/CreatePesananRequest.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/PesananController.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/UserController.php" />
         <option value="$PROJECT_DIR$/database/migrations/2015_08_05_032237_create_anggotas_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" />
         <option value="$PROJECT_DIR$/app/Anggota.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/AnggotaController.php" />
-        <option value="$PROJECT_DIR$/resources/views/guest/guest_app.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/anggota/index.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/anggota/edit.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/guest/guest_app.blade.php" />
+        <option value="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Auth/AuthenticatesUsers.php" />
         <option value="$PROJECT_DIR$/resources/views/app.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/routes.php" />
+        <option value="$PROJECT_DIR$/resources/views/guest/guest_barang.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/UserController.php" />
+        <option value="$PROJECT_DIR$/resources/views/guest/guest_anggota.blade.php" />
       </list>
     </option>
   </component>
@@ -241,6 +313,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="barang" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gudang_atk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gudang" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="anggota" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -291,6 +385,60 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gudang_atk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gudang" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gudang_atk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gudang" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Http" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gudang_atk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gudang" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Http" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -298,7 +446,7 @@
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="ANGGOTA/IND&#9;FILE&#9;file://C:/xampp/htdocs/gudang/resources/views/anggota/index.blade.php&#10;pesanan/crea&#9;FILE&#9;file://C:/xampp/htdocs/gudang/resources/views/aktivitas/pesanan/create.blade.php&#10;usercon&#9;FILE&#9;file://C:/xampp/htdocs/gudang/app/Http/Controllers/UserController.php&#10;routes&#9;FILE&#9;file://C:/xampp/htdocs/gudang/app/Http/routes.php&#10;ang/edit&#9;FILE&#9;file://C:/xampp/htdocs/gudang/resources/views/anggota/edit.blade.php&#10;angcon&#9;FILE&#9;file://C:/xampp/htdocs/gudang/app/Http/Controllers/AnggotaController.php&#10;anggota&#9;null&#9;null&#10;user&#9;FILE&#9;file://C:/xampp/htdocs/gudang/app/User.php&#10;ang/index.php&#9;FILE&#9;file://C:/xampp/htdocs/gudang/resources/views/anggota/index.blade.php&#10;userta&#9;FILE&#9;file://C:/xampp/htdocs/gudang/database/migrations/2014_10_12_000000_create_users_table.php&#10;angg/ind&#9;FILE&#9;file://C:/xampp/htdocs/gudang/resources/views/anggota/index.blade.php&#10;authcon&#9;FILE&#9;file://C:/xampp/htdocs/gudang/app/Http/Controllers/Auth/AuthController.php&#10;usercontro&#9;null&#9;null&#10;pescon&#9;FILE&#9;file://C:/xampp/htdocs/gudang/app/Http/Controllers/PesananController.php&#10;CreatepesananR&#9;null&#9;null&#10;pesa/create&#9;FILE&#9;file://C:/xampp/htdocs/gudang/resources/views/aktivitas/pesanan/create.blade.php&#10;index&#9;FILE&#9;file://C:/xampp/htdocs/gudang/resources/views/anggota/index.blade.php&#10;show&#9;FILE&#9;file://C:/xampp/htdocs/gudang/resources/views/aktivitas/pengadaan/show.blade.php&#10;aut&#9;FILE&#9;file://C:/xampp/htdocs/gudang/vendor/laravel/framework/src/Illuminate/Foundation/Auth/AuthenticatesUsers.php&#10;login&#9;FILE&#9;file://C:/xampp/htdocs/gudang/resources/views/auth/login.blade.php&#10;auth&#9;FILE&#9;file://C:/xampp/htdocs/gudang/vendor/laravel/framework/src/Illuminate/Foundation/Auth/AuthenticatesUsers.php&#10;barcon&#9;FILE&#9;file://C:/xampp/htdocs/gudang/app/Http/Controllers/BarangController.php&#10;pengcon&#9;FILE&#9;file://C:/xampp/htdocs/gudang/app/Http/Controllers/PengadaanController.php&#10;bara&#9;FILE&#9;file://C:/xampp/htdocs/gudang/database/migrations/2015_08_10_043128_create_barang_terimas_table.php&#10;pengada&#9;FILE&#9;file://C:/xampp/htdocs/gudang/app/PengadaanBarang.php&#10;penga&#9;FILE&#9;file://C:/xampp/htdocs/gudang/app/PengadaanBarang.php&#10;pencon&#9;FILE&#9;file://C:/xampp/htdocs/gudang/app/Http/Controllers/PengadaanController.php&#10;peng/cre&#9;FILE&#9;file://C:/xampp/htdocs/gudang/resources/views/aktivitas/pengadaan/create.blade.php&#10;barangter&#9;FILE&#9;file://C:/xampp/htdocs/gudang/app/BarangTerpesan.php&#10;barangTer&#9;null&#9;null&#10;barangterima&#9;null&#9;null&#10;barang&#9;FILE&#9;file://C:/xampp/htdocs/gudang/database/migrations/2015_08_07_040855_create_barang_terpesans_table.php&#10;pesa&#9;FILE&#9;file://C:/xampp/htdocs/gudang/app/PesananBarang.php&#10;peng/ind&#9;FILE&#9;file://C:/xampp/htdocs/gudang/resources/views/aktivitas/pengadaan/index.blade.php&#10;pengadaan&#9;FILE&#9;file://C:/xampp/htdocs/gudang/app/PengadaanBarang.php&#10;pesana/crea&#9;FILE&#9;file://C:/xampp/htdocs/gudang/resources/views/aktivitas/pesanan/create.blade.php&#10;pengad/cre&#9;FILE&#9;file://C:/xampp/htdocs/gudang/resources/views/aktivitas/pengadaan/create.blade.php&#10;pesacon&#9;FILE&#9;file://C:/xampp/htdocs/gudang/app/Http/Controllers/PesananController.php&#10;pesanan&#9;null&#9;null&#10;pesana&#9;FILE&#9;file://C:/xampp/htdocs/gudang/app/Http/Controllers/PesananController.php&#10;pesanancon&#9;FILE&#9;file://C:/xampp/htdocs/gudang/app/Http/Controllers/PesananController.php&#10;pes/crea&#9;FILE&#9;file://C:/xampp/htdocs/gudang/resources/views/aktivitas/pesanan/create.blade.php&#10;pesa/ind&#9;FILE&#9;file://C:/xampp/htdocs/gudang/resources/views/aktivitas/pesanan/index.blade.php&#10;pesananbarangtab&#9;null&#9;null&#10;pesananta&#9;FILE&#9;file://C:/xampp/htdocs/gudang/database/migrations/2015_08_06_040537_create_pesanans_table.php&#10;pesananbara&#9;FILE&#9;file://C:/xampp/htdocs/gudang/app/PesananBarang.php&#10;PesananBa&#9;null&#9;null&#10;Pesanan&#9;null&#9;null&#10;pesanata&#9;null&#9;null&#10;pes&#9;FILE&#9;file://C:/xampp/htdocs/gudang/app/Http/Controllers/PesananController.php" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/xampp/htdocs/gudang/app/Http/Controllers/UserController.php&#10;usercon&#9;FILE&#9;file://C:/xampp/htdocs/gudang/app/Http/Controllers/UserController.php&#10;routes&#9;FILE&#9;file://C:/xampp/htdocs/gudang/app/Http/routes.php&#10;app&#9;FILE&#9;file://C:/xampp/htdocs/gudang/resources/views/app.blade.php&#10;home&#9;FILE&#9;file://C:/xampp/htdocs/gudang/resources/views/home.blade.php&#10;homecon&#9;FILE&#9;file://C:/xampp/htdocs/gudang/app/Http/Controllers/HomeController.php&#10;auth&#9;FILE&#9;file://C:/xampp/htdocs/gudang/vendor/laravel/framework/src/Illuminate/Foundation/Auth/AuthenticatesUsers.php&#10;ANGGOTA/IND&#9;FILE&#9;file://C:/xampp/htdocs/gudang/resources/views/anggota/index.blade.php&#10;pesanan/crea&#9;FILE&#9;file://C:/xampp/htdocs/gudang/resources/views/aktivitas/pesanan/create.blade.php&#10;ang/edit&#9;FILE&#9;file://C:/xampp/htdocs/gudang/resources/views/anggota/edit.blade.php&#10;angcon&#9;FILE&#9;file://C:/xampp/htdocs/gudang/app/Http/Controllers/AnggotaController.php&#10;anggota&#9;null&#9;null&#10;user&#9;FILE&#9;file://C:/xampp/htdocs/gudang/app/User.php&#10;ang/index.php&#9;FILE&#9;file://C:/xampp/htdocs/gudang/resources/views/anggota/index.blade.php&#10;userta&#9;FILE&#9;file://C:/xampp/htdocs/gudang/database/migrations/2014_10_12_000000_create_users_table.php&#10;angg/ind&#9;FILE&#9;file://C:/xampp/htdocs/gudang/resources/views/anggota/index.blade.php&#10;authcon&#9;FILE&#9;file://C:/xampp/htdocs/gudang/app/Http/Controllers/Auth/AuthController.php&#10;usercontro&#9;null&#9;null&#10;pescon&#9;FILE&#9;file://C:/xampp/htdocs/gudang/app/Http/Controllers/PesananController.php&#10;CreatepesananR&#9;null&#9;null&#10;pesa/create&#9;FILE&#9;file://C:/xampp/htdocs/gudang/resources/views/aktivitas/pesanan/create.blade.php&#10;index&#9;FILE&#9;file://C:/xampp/htdocs/gudang/resources/views/anggota/index.blade.php&#10;show&#9;FILE&#9;file://C:/xampp/htdocs/gudang/resources/views/aktivitas/pengadaan/show.blade.php&#10;aut&#9;FILE&#9;file://C:/xampp/htdocs/gudang/vendor/laravel/framework/src/Illuminate/Foundation/Auth/AuthenticatesUsers.php&#10;login&#9;FILE&#9;file://C:/xampp/htdocs/gudang/resources/views/auth/login.blade.php&#10;barcon&#9;FILE&#9;file://C:/xampp/htdocs/gudang/app/Http/Controllers/BarangController.php&#10;pengcon&#9;FILE&#9;file://C:/xampp/htdocs/gudang/app/Http/Controllers/PengadaanController.php&#10;bara&#9;FILE&#9;file://C:/xampp/htdocs/gudang/database/migrations/2015_08_10_043128_create_barang_terimas_table.php&#10;pengada&#9;FILE&#9;file://C:/xampp/htdocs/gudang/app/PengadaanBarang.php&#10;penga&#9;FILE&#9;file://C:/xampp/htdocs/gudang/app/PengadaanBarang.php&#10;pencon&#9;FILE&#9;file://C:/xampp/htdocs/gudang/app/Http/Controllers/PengadaanController.php&#10;peng/cre&#9;FILE&#9;file://C:/xampp/htdocs/gudang/resources/views/aktivitas/pengadaan/create.blade.php&#10;barangter&#9;FILE&#9;file://C:/xampp/htdocs/gudang/app/BarangTerpesan.php&#10;barangTer&#9;null&#9;null&#10;barangterima&#9;null&#9;null&#10;barang&#9;FILE&#9;file://C:/xampp/htdocs/gudang/database/migrations/2015_08_07_040855_create_barang_terpesans_table.php&#10;pesa&#9;FILE&#9;file://C:/xampp/htdocs/gudang/app/PesananBarang.php&#10;peng/ind&#9;FILE&#9;file://C:/xampp/htdocs/gudang/resources/views/aktivitas/pengadaan/index.blade.php&#10;pengadaan&#9;FILE&#9;file://C:/xampp/htdocs/gudang/app/PengadaanBarang.php&#10;pesana/crea&#9;FILE&#9;file://C:/xampp/htdocs/gudang/resources/views/aktivitas/pesanan/create.blade.php&#10;pengad/cre&#9;FILE&#9;file://C:/xampp/htdocs/gudang/resources/views/aktivitas/pengadaan/create.blade.php&#10;pesacon&#9;FILE&#9;file://C:/xampp/htdocs/gudang/app/Http/Controllers/PesananController.php&#10;pesanan&#9;null&#9;null&#10;pesana&#9;FILE&#9;file://C:/xampp/htdocs/gudang/app/Http/Controllers/PesananController.php&#10;pesanancon&#9;FILE&#9;file://C:/xampp/htdocs/gudang/app/Http/Controllers/PesananController.php&#10;pes/crea&#9;FILE&#9;file://C:/xampp/htdocs/gudang/resources/views/aktivitas/pesanan/create.blade.php&#10;pesa/ind&#9;FILE&#9;file://C:/xampp/htdocs/gudang/resources/views/aktivitas/pesanan/index.blade.php&#10;pesananbarangtab&#9;null&#9;null&#10;pesananta&#9;FILE&#9;file://C:/xampp/htdocs/gudang/database/migrations/2015_08_06_040537_create_pesanans_table.php&#10;pesananbara&#9;FILE&#9;file://C:/xampp/htdocs/gudang/app/PesananBarang.php" />
     <property name="options.lastSelected" value="preferences.keymap" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
@@ -414,13 +562,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/barang/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.615385" vertical-offset="252" max-vertical-offset="833">
-          <caret line="28" column="31" selection-start-line="0" selection-start-column="0" selection-end-line="43" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/barang/create.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-13.730769" vertical-offset="51" max-vertical-offset="1020">
@@ -449,13 +590,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.38037866" vertical-offset="0" max-vertical-offset="581">
-          <caret line="13" column="34" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Middleware/Authenticate.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.9230769" vertical-offset="153" max-vertical-offset="884">
@@ -467,13 +601,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="272">
           <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.192307" vertical-offset="201" max-vertical-offset="1564">
-          <caret line="35" column="6" selection-start-line="35" selection-start-column="6" selection-end-line="35" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -608,14 +735,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Auth/AuthenticatesUsers.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1179" max-vertical-offset="3417">
-          <caret line="67" column="77" selection-start-line="67" selection-start-column="77" selection-end-line="67" selection-end-column="77" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/aktivitas/pesanan/show.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="550" max-vertical-offset="1275">
@@ -734,52 +853,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.423077" vertical-offset="193" max-vertical-offset="986">
-          <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/guest/guest_home.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="581">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UserController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.5384617" vertical-offset="136" max-vertical-offset="1581">
-          <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
-          <folding>
-            <element signature="e#40#68#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/aktivitas/pesanan/create.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-18.307692" vertical-offset="391" max-vertical-offset="2057">
           <caret line="51" column="42" selection-start-line="51" selection-start-column="42" selection-end-line="51" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/guest/guest_app.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34501845" vertical-offset="765" max-vertical-offset="2125">
-          <caret line="56" column="25" selection-start-line="56" selection-start-column="25" selection-end-line="56" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/anggota/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.461538" vertical-offset="0" max-vertical-offset="833">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -792,10 +869,82 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/barang/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.9615383" vertical-offset="252" max-vertical-offset="833">
+          <caret line="27" column="42" selection-start-line="0" selection-start-column="0" selection-end-line="43" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Auth/AuthenticatesUsers.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.461538" vertical-offset="1785" max-vertical-offset="2686">
+          <caret line="124" column="29" selection-start-line="124" selection-start-column="29" selection-end-line="124" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-20.038462" vertical-offset="635" max-vertical-offset="1564">
+          <caret line="71" column="0" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.192307" vertical-offset="57" max-vertical-offset="680">
+          <caret line="22" column="34" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/app.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5295203" vertical-offset="393" max-vertical-offset="2533">
-          <caret line="40" column="123" selection-start-line="40" selection-start-column="123" selection-end-line="40" selection-end-column="123" />
+        <state vertical-scroll-proportion="-7.1153846" vertical-offset="1260" max-vertical-offset="2533">
+          <caret line="85" column="33" selection-start-line="85" selection-start-column="33" selection-end-line="85" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-19.384615" vertical-offset="193" max-vertical-offset="1054">
+          <caret line="50" column="64" selection-start-line="50" selection-start-column="64" selection-end-line="50" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/guest/guest_barang.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.9230769" vertical-offset="0" max-vertical-offset="748">
+          <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UserController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.9230769" vertical-offset="0" max-vertical-offset="1819">
+          <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/anggota/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.230769" vertical-offset="252" max-vertical-offset="833">
+          <caret line="32" column="21" selection-start-line="0" selection-start-column="0" selection-end-line="43" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/guest/guest_anggota.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.26486486" vertical-offset="176" max-vertical-offset="748">
+          <caret line="19" column="62" selection-start-line="19" selection-start-column="62" selection-end-line="19" selection-end-column="62" />
           <folding />
         </state>
       </provider>
