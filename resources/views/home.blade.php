@@ -18,7 +18,7 @@
                     <div class="panel-body">
                         <marquee>
                             <font color="blue" size="6">
-                                Selamat Datang di Gudang ATK ...
+                                Selamat Datang di Gudang ATK PT. PLN (Persero) ...
                             </font>
                         </marquee>
                     </div>
