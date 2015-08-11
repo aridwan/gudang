@@ -42,9 +42,9 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="col-md-4 control-label">Jabatan</label>
+                        <label class="col-md-4 control-label">Unit Organisasi</label>
                         <div class="col-md-6">
-                            <input class="form-control" placeholder="Jabatan" name="jabatan" type="text">
+                            <input class="form-control" placeholder="unit organisasi" name="jabatan" type="text">
                         </div>
                     </div>
                     <div class="form-group">

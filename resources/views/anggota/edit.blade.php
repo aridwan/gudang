@@ -35,9 +35,9 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="col-md-4 control-label">Jabatan</label>
+                        <label class="col-md-4 control-label">Unit Organisasi</label>
                         <div class="col-md-6">
-                            <input class="form-control" name="jabatan" type="text" value="{{$data->jabatan}}">
+                            <input class="form-control" name="unit organisasi" type="text" value="{{$data->jabatan}}">
                         </div>
                     </div>
                    
