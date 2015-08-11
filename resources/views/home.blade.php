@@ -13,12 +13,13 @@
                 <div class="panel-heading">Home</div>
                 @if(Auth::check())
                     <div class="panel-body">
-                        You are logged in!
+                        <img  src="http://localhost:8000/images/Lamp1.jpg">
+                                You are logged in!
                     </div>
                     <div class="panel-body">
                         <marquee>
                             <font color="blue" size="6">
-                                Selamat Datang di Gudang ATK PT. PLN (Persero) ...
+                                Selamat Datang di Gudang ATK - PT. PLN (Persero) ...
                             </font>
                         </marquee>
                     </div>
