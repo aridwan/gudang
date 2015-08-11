@@ -16,6 +16,7 @@ class CreateAnggotasTable extends Migration
             $table->increments('id');
             $table->string('nip');
             $table->string('nama');
+            $table->string('email');
             $table->string('jabatan');
             $table->timestamps();
         });

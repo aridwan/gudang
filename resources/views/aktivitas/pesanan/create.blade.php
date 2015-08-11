@@ -71,7 +71,7 @@
                             </table>
                         </div>
                     </div>
-                    {{Form::old('barpes')}}
+{{--                    {{Form::old('barpes')}}--}}
                     <div class="form-group">
                         <div class="col-md-offset-10 col-md-2">
                             <button type="submit" class="btn btn-primary btn-block">
@@ -95,7 +95,7 @@
                     $("<td />").append(
                             $('<select class="form-control" name="barpes['+ iter +'][barang_id]" />')
                                 @foreach($data as $row)
-                                    .append('<option value="{{$row['id']}}">{{$row['id'].' - '.$row['nama']}}</option>')
+                                    .append('<option value="{{$row['id']}}">{{$row['id'].' - '.$row['nama'].'          '.'('.$row['kuantitas'].')'}}</option>')
                                 @endforeach
                             ),
                             $("<td />").append('<input type="text" class="form-control" name="barpes['+ iter +'][kuantitas]">'),

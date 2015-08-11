@@ -81,6 +81,7 @@ class PesananController extends Controller
     public function show($id)
     {
         $pesananBarang=$this->pesananBarang->find($id);
+//        dd($pesananBarang->barangs);
         return view('aktivitas/pesanan/show',compact('pesananBarang'));
     }
 

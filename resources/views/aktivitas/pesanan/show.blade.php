@@ -54,7 +54,7 @@
                             </tr>
                             @foreach($pesananBarang->barangs as $data)
                                 <tr>
-                                    <td>{{$data->id}}</td>
+                                    <td>{{$data->id.' - '.$data->nama}}</td>
                                     <td>{{$data->pivot->kuantitas}}</td>
                                     <td>{{$data->pivot->tanggal_butuh}}</td>
                                 </tr>

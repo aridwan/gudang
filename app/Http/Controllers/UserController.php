@@ -2,14 +2,12 @@
 
 namespace App\Http\Controllers;
 
-use App\Anggota;
-use App\User;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
-class AnggotaController extends Controller
+class UserController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -17,19 +15,8 @@ class AnggotaController extends Controller
      * @return Response
      */
     public function index()
-    { 
-
-        $data = Anggota::get([
-            'id',
-            'nip',
-            'nama',
-            'jabatan',
-            'email'
-        ]);
-
-        //return view('pre', compact('data'));
-      
-        return view('anggota.index', compact('data'));
+    {
+        return view('user/home');
     }
 
     /**
@@ -39,7 +26,7 @@ class AnggotaController extends Controller
      */
     public function create()
     {
-        return view('anggota.create');
+        //
     }
 
     /**
@@ -50,19 +37,7 @@ class AnggotaController extends Controller
      */
     public function store(Request $request)
     {
-        $data = $request->all();
-        $fill1['name'] = $data['nip'];
-        $fill1['password'] = bcrypt($data['password']) ;
-
-        $fill2['nip'] = $data['nip'];
-        $fill2['nama'] = $data['nama'];
-        $fill2['email'] = $data['email'];
-        $fill2['jabatan'] = $data['jabatan'];
-
-//        dd($fill1,$fill2);
-        User::create($fill1);
-        Anggota::create($fill2);
-        return redirect()->action('AnggotaController@index');
+        //
     }
 
     /**
@@ -73,7 +48,7 @@ class AnggotaController extends Controller
      */
     public function show($id)
     {
-
+        //
     }
 
     /**
@@ -84,8 +59,7 @@ class AnggotaController extends Controller
      */
     public function edit($id)
     {
-        $data = Anggota::find($id);
-        return view('anggota.edit', compact('data'));
+        //
     }
 
     /**
@@ -97,10 +71,7 @@ class AnggotaController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $fill = $request->all();
-//        dd($fill);
-        Anggota::find($id)->update($fill);
-        return redirect()->action('AnggotaController@index');
+        //
     }
 
     /**
@@ -111,8 +82,6 @@ class AnggotaController extends Controller
      */
     public function destroy($id)
     {
-        $anggota = Anggota::find($id);
-        $anggota->delete();
-        return redirect()->action('AnggotaController@index');
+        //
     }
 }

@@ -17,6 +17,7 @@
                             <th class="text-center">NIP</th>
                             <th class="text-center">Nama</th>
                             <th class="text-center">Unit Organisasi</th>
+                            <th class="text-center">Email</th>
                             <th class="text-center">Pilihan</th>
                         </tr>
                         @foreach($data as $row)
@@ -24,6 +25,7 @@
                                 <td>{{$row['nip']}}</td>
                                 <td>{{$row['nama']}}</td>
                                 <td>{{$row['jabatan']}}</td>
+                                <td>{{$row['email']}}</td>
                                 <td class="text-center">
                                     {!!link_to('anggota/edit/'.$row['id'], 'Ubah', ['class' => 'btn btn-primary btn-sm'])!!}
                                     {!!link_to('anggota/destroy/'.$row['id'], 'Hapus', ['class' => 'btn btn-danger btn-sm'])!!}
