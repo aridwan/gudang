@@ -12,9 +12,9 @@
             <div class="panel panel-default">
                 <div class="panel-heading">Home</div>
                 @if(Auth::check())
-                    <div class="panel-body">
+                    <div class="panel-body  col-md-2 col-md-offset-5">
                         <img  src="http://localhost:8000/images/Lamp1.jpg">
-                                You are logged in!
+                        You are logged in!
                     </div>
                     <div class="panel-body">
                         <marquee>
