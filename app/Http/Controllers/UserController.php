@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 use App\Anggota;
 use App\Barang;
 use Auth;
+use Hash;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
@@ -40,6 +41,21 @@ class UserController extends Controller
         $data = User::find(Auth::user()->id);
 //        dd($data);
         return view('guest/guest_password', compact('data'));
+    }
+
+    public function passwordUpdate(Request $request, $id)
+    {
+        if($request['password2'] == $request['password_ulangi'] && $user = User::findOrFail($id))
+        {
+            $user->fill([
+                'password' => Hash::make($request->password2)
+            ])->save();
+            return redirect('/home');
+        }
+        else
+        {
+            return redirect($this);
+        }
     }
 
     /**

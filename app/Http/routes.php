@@ -49,6 +49,7 @@ Route::group(['middleware' => ['auth']], function() {
     Route::get('guest_barang/index', 'UserController@barang');
     Route::get('guest_anggota/index', 'UserController@anggota');
     Route::get('guest_password/index', 'UserController@passwordEdit');
+    Route::post('guest_password/update/{id}', 'UserController@passwordUpdate');
 });
 
 //Custom Auth

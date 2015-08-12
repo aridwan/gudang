@@ -41,6 +41,12 @@
                         </div>
                     </div>
                     <div class="form-group">
+                        <label class="col-md-4 control-label">Ulangi Password Baru</label>
+                        <div class="col-md-6">
+                            <input class="form-control" name="password_ulangi" type="text">
+                        </div>
+                    </div>
+                    <div class="form-group">
                         <div class="col-md-6 col-md-offset-8">
                             <button type="submit" class="btn btn-primary">
                                 Submit
