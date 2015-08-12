@@ -48,7 +48,7 @@ Route::group(['middleware' => ['auth']], function() {
 
     Route::get('guest_barang/index', 'UserController@barang');
     Route::get('guest_anggota/index', 'UserController@anggota');
-    Route::get('guest_pesanan/index', 'UserController@pesanan');
+    Route::get('guest_password/index', 'UserController@passwordEdit');
 });
 
 //Custom Auth

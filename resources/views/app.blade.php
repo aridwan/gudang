@@ -98,7 +98,7 @@
                                 Aktivitas<span class="caret"></span>
                             </a>
                             <ul class="dropdown-menu" role="menu">
-                                <li>{!!link_to('guest_pesanan/index', 'Pesanan Barang')!!}</li>
+                                <li>{!!link_to('pesanan/index', 'Pesanan Barang')!!}</li>
 
                             </ul>
                         </li>
@@ -115,6 +115,7 @@
                                 {{ Auth::user()->name }} <span class="caret"></span>
                             </a>
                             <ul class="dropdown-menu" role="menu">
+                                <li>{!!link_to('guest_password/index', 'Ubah Password')!!}</li>
                                 <li>{!!link_to('auth/logout', 'Logout')!!}</li>
                             </ul>
                         </li>

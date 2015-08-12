@@ -2,10 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\User;
 use Illuminate\Http\Request;
 
 use App\Anggota;
 use App\Barang;
+use Auth;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
@@ -31,6 +33,13 @@ class UserController extends Controller
     {
         $data = Anggota::all();
         return view('guest/guest_anggota', compact('data'));
+    }
+
+    public function passwordEdit()
+    {
+        $data = User::find(Auth::user()->id);
+//        dd($data);
+        return view('guest/guest_password', compact('data'));
     }
 
     /**
