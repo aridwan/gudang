@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Barang;
 use Illuminate\Http\Request;
 
+use Auth;
+use DB;
 use App\PesananBarang;
 use App\BarangTerpesan;
 use App\Http\Requests;
@@ -33,7 +35,9 @@ class PesananController extends Controller
     public function index()
     {
         $data = PesananBarang::all();
-        return view('aktivitas.pesanan.index', compact('data'));
+        $pesananuser = DB::table('pesanan_barangs')->where('pemesan','=',Auth::user()->name)->get();
+//        dd($pesananuser);
+        return view('aktivitas.pesanan.index', compact('data','pesananuser'));
     }
 
     /**
