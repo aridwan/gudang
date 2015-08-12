@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use App\Anggota;
+use App\Barang;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
@@ -17,6 +19,18 @@ class UserController extends Controller
     public function index()
     {
         return view('user/home');
+    }
+
+    public function barang()
+    {
+        $data = Barang::all();
+        return view('guest/guest_barang', compact('data'));
+    }
+
+    public function anggota()
+    {
+        $data = Anggota::all();
+        return view('guest/guest_anggota', compact('data'));
     }
 
     /**

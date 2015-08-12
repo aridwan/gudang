@@ -82,7 +82,7 @@
                                 Data Barang<span class="caret"></span>
                             </a>
                             <ul class="dropdown-menu" role="menu">
-                                <li>{!!link_to('barang/index', 'List')!!}</li>
+                                <li>{!!link_to('guest_barang/index', 'List')!!}</li>
                             </ul>
                         </li>
                         <li class="dropdown">
@@ -90,7 +90,7 @@
                                 Data Anggota<span class="caret"></span>
                             </a>
                             <ul class="dropdown-menu" role="menu">
-                                <li>{!!link_to('anggota/index', 'List')!!}</li>
+                                <li>{!!link_to('guest_anggota/index', 'List')!!}</li>
                             </ul>
                         </li>
                         <li class="dropdown">
@@ -98,7 +98,7 @@
                                 Aktivitas<span class="caret"></span>
                             </a>
                             <ul class="dropdown-menu" role="menu">
-                                <li>{!!link_to('pesanan/index', 'Pesanan Barang')!!}</li>
+                                <li>{!!link_to('guest_pesanan/index', 'Pesanan Barang')!!}</li>
 
                             </ul>
                         </li>
