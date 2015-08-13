@@ -50,7 +50,7 @@
                     <div class="form-group">
                         <label class="col-md-2 control-label">Tanggal Pesanan</label>
                         <div class="col-md-3">
-                            <input data-provide="datepicker" class="datepicker form-control" placeholder="2017-12-31" name="tanggal" value="{{Form::old('tanggal')}}">
+                            <input data-provide="datepicker" class="datepicker form-control" placeholder="2017-12-31" name="tanggal" value="{{$tanggal}}">
                         </div>
                     </div>
                     <div class="form-group">

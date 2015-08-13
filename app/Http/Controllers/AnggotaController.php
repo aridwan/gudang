@@ -60,9 +60,16 @@ class AnggotaController extends Controller
         $fill2['jabatan'] = $data['jabatan'];
 
 //        dd($fill1,$fill2);
-        User::create($fill1);
-        Anggota::create($fill2);
-        return redirect()->action('AnggotaController@index');
+        if($data['password'] == $data['confirm_password'])
+        {
+            User::create($fill1);
+            Anggota::create($fill2);
+            return redirect()->action('AnggotaController@index');
+        }
+        else
+        {
+            return redirect()->back()->withErrors(['Password harus sama']);
+        }
     }
 
     /**
@@ -112,7 +119,9 @@ class AnggotaController extends Controller
     public function destroy($id)
     {
         $anggota = Anggota::find($id);
+        $nip = $anggota['nip'];
         $anggota->delete();
+        $user = DB::table('users')->where('name',$nip)->delete();
         return redirect()->action('AnggotaController@index');
     }
 }

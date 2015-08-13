@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 
 use Auth;
 use DB;
+use DateTime;
 use App\PesananBarang;
 use App\BarangTerpesan;
 use App\Http\Requests;
@@ -49,9 +50,10 @@ class PesananController extends Controller
     {
         $id = $this->pesananBarang->max('id');
         $id = $id === null ? 1 : $id + 1;
-
+        $tanggal = (new DateTime);
+        $tanggal = $tanggal->format('Y-m-d');
         $data = Barang::all();
-        return view('aktivitas.pesanan.create', compact('data','id'));
+        return view('aktivitas.pesanan.create', compact('data','id','tanggal'));
     }
 
     /**

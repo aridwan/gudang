@@ -8,6 +8,8 @@ use App\Barang;
 use App\BarangTerima;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use DateTime;
+use Mockery\Exception;
 
 class PengadaanController extends Controller
 {
@@ -44,8 +46,10 @@ class PengadaanController extends Controller
 
         $id = $this->pengadaanBarang->max('id');
         $id = $id === null ? 1 : $id + 1;
+        $tanggal = (new DateTime);
+        $tanggal = $tanggal->format('Y-m-d');;
         $data = Barang::all();
-        return view('aktivitas.pengadaan.create', compact('data','id'));
+        return view('aktivitas.pengadaan.create', compact('data','id','tanggal'));
 
         //
     }
@@ -65,14 +69,20 @@ class PengadaanController extends Controller
         $pengadaan = $this->pengadaanBarang->firstOrCreate($request->only($pengadaanFill));
 
         // dd($all);
-        foreach($all['barpeng'] as $barpeng) {
-            $addedItem = Barang::find($barpeng['barang_id']);
-            $addedItem['kuantitas'] += $barpeng['kuantitas'];
-            Barang::find($barpeng['barang_id'])->update($addedItem->toArray());
-            $barang_id = array_pull($barpeng, 'barang_id');
-            $pengadaan->barangs()->attach($barang_id, $barpeng);
+        try{
+            foreach($all['barpeng'] as $barpeng) {
+                $addedItem = Barang::find($barpeng['barang_id']);
+                $addedItem['kuantitas'] += $barpeng['kuantitas'];
+                Barang::find($barpeng['barang_id'])->update($addedItem->toArray());
+                $barang_id = array_pull($barpeng, 'barang_id');
+                $pengadaan->barangs()->attach($barang_id, $barpeng);
+            }
+            return redirect('pengadaan/index');
         }
-        return redirect('pengadaan/index');
+        catch(Exception $e)
+        {
+                return redirect()->back()->withErrors($e);
+        }
     }
 
     /**
