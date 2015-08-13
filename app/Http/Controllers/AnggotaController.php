@@ -50,6 +50,7 @@ class AnggotaController extends Controller
      */
     public function store(Request $request)
     {
+        $this->validate($request,['password' => 'required|min:6|same:confirm_password']);
         $data = $request->all();
         $fill1['name'] = $data['nip'];
         $fill1['password'] = bcrypt($data['password']) ;
@@ -60,16 +61,9 @@ class AnggotaController extends Controller
         $fill2['jabatan'] = $data['jabatan'];
 
 //        dd($fill1,$fill2);
-        if($data['password'] == $data['confirm_password'])
-        {
             User::create($fill1);
             Anggota::create($fill2);
             return redirect()->action('AnggotaController@index');
-        }
-        else
-        {
-            return redirect()->back()->withErrors(['Password harus sama']);
-        }
     }
 
     /**
