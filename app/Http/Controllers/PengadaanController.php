@@ -43,13 +43,19 @@ class PengadaanController extends Controller
      */
     public function create()
     {
-
-        $id = $this->pengadaanBarang->max('id');
-        $id = $id === null ? 1 : $id + 1;
-        $tanggal = (new DateTime);
-        $tanggal = $tanggal->format('Y-m-d');;
-        $data = Barang::all();
-        return view('aktivitas.pengadaan.create', compact('data','id','tanggal'));
+        $result = Barang::all();
+        if(!$result->isEmpty())
+        {
+            $id = $this->pengadaanBarang->max('id');
+            $id = $id === null ? 1 : $id + 1;
+            $tanggal = (new DateTime);
+            $tanggal = $tanggal->format('Y-m-d');;
+            $data = Barang::all();
+            return view('aktivitas.pengadaan.create', compact('data', 'id', 'tanggal'));
+        }
+        else{
+            return redirect()->back()->withErrors(['Data barang kosong, silahkan mengisi data barang terlebih dahulu']);
+        }
 
         //
     }

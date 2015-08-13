@@ -42,9 +42,14 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="col-md-4 control-label">Unit Organisasi</label>
+                        <label class="col-md-4 control-label">Departemen</label>
                         <div class="col-md-6">
-                            <input class="form-control" placeholder="unit organisasi" name="jabatan" type="text">
+                            <select class="form-control dropdown" name="jabatan">
+                                <option value=""></option>
+                                <option value=""></option>
+                                <option value=""></option>
+                                <option value=""></option>
+                            </select>
                         </div>
                     </div>
                     <div class="form-group">

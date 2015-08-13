@@ -14,8 +14,17 @@
     <div class="row">
         <div class="col-md-6 col-md-offset-3">
             <div class="panel panel-default">
-                @if(Auth::user()->name == 'SUPERVISOR')
+                @if (count($errors) > 0)
+                    <div class="alert alert-danger">
+                        <ul>
+                            @foreach ($errors->all() as $error)
+                                <li>{{ $error }}</li>
+                            @endforeach
+                        </ul>
+                    </div>
+                @endif
                     <div class="panel-heading">Pesanan Barang</div>
+                @if(Auth::user()->name == 'SUPERVISOR')
                         @if(sizeof($data))
                             <table class="table table-bordered table-striped">
                                 <tr>
