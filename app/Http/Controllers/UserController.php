@@ -11,6 +11,7 @@ use Auth;
 use Hash;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use Illuminate\Auth\Guard;
 
 class UserController extends Controller
 {
@@ -19,6 +20,14 @@ class UserController extends Controller
      *
      * @return Response
      */
+
+    public function __construct(Guard $auth)
+    {
+//        $this->middleware('guest', ['except' => ['getLogout', 'getProfile', 'postProfile']]);
+        $this->auth = $auth;
+    }
+
+
     public function index()
     {
         return view('user/home');
@@ -45,17 +54,17 @@ class UserController extends Controller
 
     public function passwordUpdate(Request $request, $id)
     {
-        if($request['password2'] == $request['password_ulangi'] && $user = User::findOrFail($id))
-        {
-            $user->fill([
-                'password' => Hash::make($request->password2)
-            ])->save();
+        $this->validate($request, [
+            'password' => 'required|same:password',
+        ]);
+        $old = $request->input('password');
+        $new = $request->input('password2');
+        if (Hash::check($old, $this->auth->user()->password) && $new == $request['password_ulangi']) {
+            $this->auth->user()->password = Hash::make($new);
+            $this->auth->user()->save();
             return redirect('/home');
         }
-        else
-        {
-            return redirect($this);
-        }
+        return redirect()->back()->withErrors(['Password lama salah atau ulangi password berbeda']);
     }
 
     /**
