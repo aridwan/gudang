@@ -121,6 +121,29 @@ class PesananController extends Controller
         //
     }
 
+    public function diterima($id)
+    {
+        $pesanan = PesananBarang::find($id);
+        $pesanan->status = 'Diterima';
+        $pesanan->save();
+        return redirect('pesanan/index');
+    }
+
+    public function menunggu($id)
+    {
+        $pesanan = PesananBarang::find($id);
+        $pesanan->status = 'Menunggu';
+        $pesanan->save();
+        return redirect('pesanan/index');
+    }
+
+    public function ditolak($id)
+    {
+        $pesanan = PesananBarang::find($id);
+        $pesanan->status = 'Ditolak';
+        $pesanan->save();
+        return redirect('pesanan/index');
+    }
     /**
      * Remove the specified resource from storage.
      *

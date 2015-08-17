@@ -22,6 +22,29 @@
                             <div class="col-md-2">
                                 <label class="control-label">PS-{{$pesananBarang->id}}</label>
                             </div>
+                            <div class="col-md-2">
+                                <label class="control-label">Konfirmasi : </label>
+                            </div>
+                            <div class="col-md-6">
+                                @if(Auth::user()->name == 'SUPERVISOR')
+                                    <div class="col-md-2">
+                                        {!! Form::open(['url' => 'pesanan/diterima/'.$pesananBarang->id, 'class' => 'form-horizontal']) !!}
+                                            <button class="btn btn-success btn-sm">Diterima</button>
+                                        {!!Form::close()!!}
+                                    </div>
+                                    <div class="col-md-3 col-md-offset-1">
+                                        {!! Form::open(['url' => 'pesanan/menunggu/'.$pesananBarang->id, 'class' => 'form-horizontal']) !!}
+                                        <button class="btn btn-warning btn-sm">Menunggu</button>
+                                        {!!Form::close()!!}
+                                    </div>
+                                    <div class="col-md-2">
+                                        {!! Form::open(['url' => 'pesanan/ditolak/'.$pesananBarang->id, 'class' => 'form-horizontal']) !!}
+                                            <button class="btn btn-danger btn-sm">Ditolak</button>
+                                        {!!Form::close()!!}
+                                    </div>
+                                @endif
+
+                            </div>
                         </div>
                         <br>
                         <div class="form-group">
