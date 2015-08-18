@@ -79,6 +79,9 @@ class PesananController extends Controller
 
         // dd($all);
         foreach($all['barpes'] as $barpes) {
+            $barangTerpakai = Barang::find($barpes['barang_id']);
+            $barangTerpakai->used = '1';
+            $barangTerpakai->save();
             $barang_id = array_pull($barpes, 'barang_id');
             $pesanan->barangs()->attach($barang_id, $barpes);
         }
