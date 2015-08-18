@@ -32,7 +32,7 @@
                                     <th class="text-center">Tanggal</th>
                                     <th class="text-center">Pemesan</th>
                                     <th class="text-center">Status</th>
-                                    <th class="text-center">Pilihan</th>
+                                    <th class="text-center"></th>
                                 </tr>
                                 @foreach($data as $row)
                                     <tr class="text-center">
@@ -67,7 +67,7 @@
                                     <th class="text-center">Tanggal</th>
                                     <th class="text-center">Pemesan</th>
                                     <th class="text-center">Status</th>
-                                    <th class="text-center">Pilihan</th>
+                                    <th class="text-center"></th>
                                 </tr>
                                 @foreach($pesananuser as $row)
                                     <tr class="text-center">

@@ -30,7 +30,7 @@
                             <th class="text-center">Nomor</th>
                             <th class="text-center">Tanggal</th>
                             <th class="text-center">Penerima</th>
-                            <th class="text-center">Pilihan</th>
+                            <th class="text-center"></th>
                         </tr>
                         @foreach($data as $row)
                             <tr class="text-center">

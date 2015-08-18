@@ -105,7 +105,7 @@ class BarangController extends Controller
         }
         else
         {
-            return redirect()->back()->withErrors(['barang pernah dipakai, tidak dapat menghapus']);
+            return redirect()->back()->withErrors(['Barang sudah digunakan, tidak dapat dihapus!']);
         }
 
     }
