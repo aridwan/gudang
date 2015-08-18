@@ -72,8 +72,8 @@
                             </a>
                             <ul class="dropdown-menu" role="menu">
                                 <li>{!!link_to('pesanan/index', 'Pesanan Barang')!!}</li>
+                                <li>{!!link_to('pengajuan/index', 'Pengajuan Barang')!!}</li>
                                 <li>{!!link_to('pengadaan/index', 'Pengadaan Barang')!!}</li>
-
                             </ul>
                         </li>
                     @elseif(Auth::check())
@@ -99,6 +99,7 @@
                             </a>
                             <ul class="dropdown-menu" role="menu">
                                 <li>{!!link_to('pesanan/index', 'Pesanan Barang')!!}</li>
+                                <li>{!!link_to('pengajuan/index', 'Pengajuan Barang')!!}</li>
 
                             </ul>
                         </li>

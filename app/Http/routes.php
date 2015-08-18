@@ -23,6 +23,13 @@ Route::group(['middleware' => ['auth']], function() {
     Route::get('barang/edit/{id}', 'BarangController@edit');
     Route::post('barang/update/{id}', 'BarangController@update');
 
+    Route::get('pengajuan/index', 'PengajuanController@index');
+    Route::get('pengajuan/create', 'PengajuanController@create');
+    Route::post('pengajuan/store', 'PengajuanController@store');
+    Route::get('pengajuan/destroy/{id}', 'PengajuanController@destroy');
+    Route::get('pengajuan/edit/{id}', 'PengajuanController@edit');
+    Route::post('pengajuan/update/{id}', 'PengajuanController@update');
+
     Route::get('anggota/index', 'AnggotaController@index');
     Route::get('anggota/create', 'AnggotaController@create');
     Route::post('anggota/store', 'AnggotaController@store');
