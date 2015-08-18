@@ -6,6 +6,12 @@
 
 @section('content')
 <br>
+<div class="well well-sm">
+    <ul class="nav nav-pills nav-justified">
+        <li>{!!link_to('pengajuan/index','List')!!}</li>
+        <li class="active">{!!link_to('pengajuan/create','Tambah')!!}</li>
+    </ul>
+</div>
 <div class="row">
     <div class="col-md-6 col-md-offset-3">
         <div class="panel panel-default">
