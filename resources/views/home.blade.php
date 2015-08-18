@@ -18,7 +18,7 @@
                 
                 @if(Auth::check())
                     <div class="panel-body  col-md-2 col-md-offset-5">
-                        <img  src="http://localhost/gudang/public/images/Lamp1.jpg">
+                        <img  src="http://localhost/gudang/public/images/Bolam.jpg">
                         You are logged in!
                     </div>
                     <div class="panel-body">
