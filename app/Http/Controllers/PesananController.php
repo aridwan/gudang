@@ -123,10 +123,39 @@ class PesananController extends Controller
 
     public function diterima($id)
     {
-        $pesanan = PesananBarang::find($id);
-        $pesanan->status = 'Diterima';
-        $pesanan->save();
-        return redirect('pesanan/index');
+//        dd($id);
+        $list = $this->barangPesanan->all()->where('pesanan_barang_id',intval($id));
+        $length = sizeof($list);
+        $checklist = 0;
+//        dd($list, $length);
+        foreach($list as $data)
+        {
+            $check = Barang::find($data['barang_id']);
+//            dd($check['kuantitas'],$list,$data['kuantitas']);
+                if($check['kuantitas'] >= $data['kuantitas'])
+                $checklist++;
+        }
+//        dd($checklist, $length);
+        if($checklist == $length)
+        {
+            foreach($list as $data)
+            {
+                $check = Barang::find($data['barang_id']);
+                $check['kuantitas'] -= $data['kuantitas'];
+                $check->save();
+            }
+            $pesanan = PesananBarang::find($id);
+            $pesanan->status = 'Diterima';
+            $pesanan->save();
+            return redirect('pesanan/index');
+        }
+        else
+        {
+            $pesanan = PesananBarang::find($id);
+            $pesanan->status = 'Menunggu';
+            $pesanan->save();
+            return redirect('pesanan/index')->withErrors(['Ada barang belum tersedia']);
+        }
     }
 
     public function menunggu($id)

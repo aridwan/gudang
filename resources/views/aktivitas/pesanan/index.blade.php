@@ -60,7 +60,6 @@
                             </div>
                         @endif
                 @else
-                    <div class="panel-heading">Pesanan Barang</div>
                         @if(sizeof($pesananuser))
                             <table class="table table-bordered table-striped">
                                 <tr>

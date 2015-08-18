@@ -42,8 +42,17 @@
                                             <button class="btn btn-danger btn-sm">Ditolak</button>
                                         {!!Form::close()!!}
                                     </div>
+                                @else
+                                    @if($pesananBarang->status == 'Belum dikonfirmasi')
+                                        <label class="control-label"><span class="label label-default">{{$pesananBarang->status}}</span></label >
+                                    @elseif($pesananBarang->status == 'Diterima')
+                                        <label class="control-label"><span class="label label-success">{{$pesananBarang->status}}</span></label >
+                                    @elseif($pesananBarang->status == 'Ditolak')
+                                        <label class="control-label"><span class="label label-danger">{{$pesananBarang ->status}}</span></label >
+                                    @else
+                                        <label class="control-label"><span class="label label-warning">{{$pesananBarang->status}}</span></label >
+                                    @endif
                                 @endif
-
                             </div>
                         </div>
                         <br>

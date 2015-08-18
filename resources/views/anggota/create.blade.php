@@ -45,7 +45,7 @@
                         <label class="col-md-4 control-label">Departemen</label>
                         <div class="col-md-6">
                             <select class="form-control dropdown" name="jabatan">
-                                <option value=""></option>
+                                <option value="Fasop">Fasilitas Operasi</option>
                                 <option value=""></option>
                                 <option value=""></option>
                                 <option value=""></option>
