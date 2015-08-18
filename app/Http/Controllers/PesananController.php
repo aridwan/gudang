@@ -59,7 +59,7 @@ class PesananController extends Controller
             return view('aktivitas.pesanan.create', compact('data', 'id', 'tanggal'));
         }
         else{
-            return redirect()->back()->withErrors(['Data barang kosong, silahkan mengisi data barang terlebih dahulu']);
+            return redirect()->back()->withErrors(['Data barang kosong, silahkan mengisi Form Pengajuan Barang terlebih dahulu!']);
         }
     }
 
@@ -155,16 +155,16 @@ class PesananController extends Controller
         else
         {
             $pesanan = PesananBarang::find($id);
-            $pesanan->status = 'Menunggu';
+            $pesanan->status = 'Harap Menunggu';
             $pesanan->save();
-            return redirect('pesanan/index')->withErrors(['Ada barang belum tersedia']);
+            return redirect('pesanan/index')->withErrors(['Terdapat barang yang belum tersedia, lakukan Pengadaan Barang!']);
         }
     }
 
     public function menunggu($id)
     {
         $pesanan = PesananBarang::find($id);
-        $pesanan->status = 'Menunggu';
+        $pesanan->status = 'Harap Menunggu';
         $pesanan->save();
         return redirect('pesanan/index');
     }

@@ -32,12 +32,12 @@
                                             <button class="btn btn-success btn-sm">Diterima</button>
                                         {!!Form::close()!!}
                                     </div>
-                                    <div class="col-md-3 col-md-offset-1">
+                                    <div class="col-md-3  col-md-offset-1">
                                         {!! Form::open(['url' => 'pesanan/menunggu/'.$pesananBarang->id, 'class' => 'form-horizontal']) !!}
-                                        <button class="btn btn-warning btn-sm">Menunggu</button>
+                                        <button class="btn btn-warning btn-sm">Harap Menunggu</button>
                                         {!!Form::close()!!}
                                     </div>
-                                    <div class="col-md-2">
+                                    <div class="col-md-2  col-md-offset-1">
                                         {!! Form::open(['url' => 'pesanan/ditolak/'.$pesananBarang->id, 'class' => 'form-horizontal']) !!}
                                             <button class="btn btn-danger btn-sm">Ditolak</button>
                                         {!!Form::close()!!}
