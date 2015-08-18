@@ -72,7 +72,7 @@ class PengadaanController extends Controller
 //         dd($all);
 
         $pengadaanFill = $this->pengadaanBarang->getFillable();
-        $pengadaan = $this->pengadaanBarang->firstOrCreate($request->only($pengadaanFill));
+        $pengadaan = $this->pengadaanBarang->Create($request->only($pengadaanFill));
 
         // dd($all);
         try{
