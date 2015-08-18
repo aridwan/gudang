@@ -16,7 +16,7 @@
                         <tr>
                             <th class="text-center">NIP</th>
                             <th class="text-center">Nama</th>
-                            <th class="text-center">Unit Organisasi</th>
+                            <th class="text-center">Departemen</th>
                             <th class="text-center">Email</th>
                             <th class="text-center">Pilihan</th>
                         </tr>
