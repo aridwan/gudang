@@ -45,10 +45,15 @@
                         <label class="col-md-4 control-label">Departemen</label>
                         <div class="col-md-6">
                             <select class="form-control dropdown" name="jabatan">
-                                <option value="Fasop">Fasilitas Operasi</option>
-                                <option value=""></option>
-                                <option value=""></option>
-                                <option value=""></option>
+                                <option value="ADMINISTRASI DAN UMUM">ADMINISTRASI DAN UMUM</option>
+                                <option value="STAFF AHLI">STAFF AHLI</option>
+                                <option value="FASILITAS OPERASI">FASILITAS OPERASI</option>
+                                <option value="SIE TELEKOMUNIKASI">SIE TELEKOMUNIKASI</option>
+                                <option value="PELAKSANA PENGADAAN">PELAKSANA PENGADAAN</option>
+                                <option value="OPERASI SISTEM-DISPATCHER">OPERASI SISTEM-DISPATCHER</option>
+                                <option value="OPERASI SISTEM">OPERASI SISTEM</option>
+                                <option value="PERENCANAAN DAN EVALUASI OPERASI SISTEM">PERENCANAAN DAN EVALUASI OPERASI SISTEM</option>
+                                <option value="SIE STRATEGI OPERASI SISTEM">SIE STRATEGI OPERASI SISTEM</option>
                             </select>
                         </div>
                     </div>

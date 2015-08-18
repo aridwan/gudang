@@ -99,8 +99,19 @@ class AnggotaController extends Controller
     public function update(Request $request, $id)
     {
         $fill = $request->all();
-//        dd($fill);
-        Anggota::find($id)->update($fill);
+        $fillanggota['nip'] = $fill['nip'];
+        $fillanggota['nama'] = $fill['nama'];
+        $fillanggota['jabatan'] = $fill['jabatan'];
+        $fillanggota['email'] = $fill['email'];
+        
+        // dd($fill);
+        Anggota::find($id)->update($fillanggota);
+        if($fill['password'] != null)
+        {
+            $data = User::find($id+1);
+            $data->password = bcrypt($fill['password']);
+            $data->save();  
+        }
         return redirect()->action('AnggotaController@index');
     }
 

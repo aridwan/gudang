@@ -37,15 +37,34 @@
                     <div class="form-group">
                         <label class="col-md-4 control-label">Departemen</label>
                         <div class="col-md-6">
-                            <input class="form-control" name="jabatan" type="text" value="{{$data->jabatan}}">
+                            <select class="form-control dropdown" name="jabatan">
+                                <option value="ADMINISTRASI DAN UMUM">ADMINISTRASI DAN UMUM</option>
+                                <option value="STAFF AHLI">STAFF AHLI</option>
+                                <option value="FASILITAS OPERASI">FASILITAS OPERASI</option>
+                                <option value="SIE TELEKOMUNIKASI">SIE TELEKOMUNIKASI</option>
+                                <option value="PELAKSANA PENGADAAN">PELAKSANA PENGADAAN</option>
+                                <option value="OPERASI SISTEM-DISPATCHER">OPERASI SISTEM-DISPATCHER</option>
+                                <option value="OPERASI SISTEM">OPERASI SISTEM</option>
+                                <option value="PERENCANAAN DAN EVALUASI OPERASI SISTEM">PERENCANAAN DAN EVALUASI OPERASI SISTEM</option>
+                                <option value="SIE STRATEGI OPERASI SISTEM">SIE STRATEGI OPERASI SISTEM</option>
+                            </select>
                         </div>
                     </div>
                     <div class="form-group">
                         <label class="col-md-4 control-label">Email</label>
                         <div class="col-md-6">
-                            <input class="form-control" name="jabatan" type="text" value="{{$data->email}}">
+                            <input class="form-control" name="email" type="text" value="{{$data->email}}">
                         </div>
                     </div>
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">Ubah Password</label>
+                        <div class="col-md-6">
+                            <input class="form-control" name="password" type="password">
+                        </div>
+                    </div>
+                    
+
+
                     <div class="form-group">
                         <div class="col-md-6 col-md-offset-8">
                             <button type="submit" class="btn btn-primary">

@@ -64,7 +64,7 @@ class UserController extends Controller
             $this->auth->user()->save();
             return redirect('/home');
         }
-        return redirect()->back()->withErrors(['Password lama salah atau ulangi password berbeda']);
+        return redirect()->back()->withErrors(['Password lama salah atau perulangan password baru berbeda!']);
     }
 
     /**
