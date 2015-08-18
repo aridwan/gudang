@@ -62,8 +62,6 @@
                             <input class="form-control" name="password" type="password">
                         </div>
                     </div>
-                    
-
 
                     <div class="form-group">
                         <div class="col-md-6 col-md-offset-8">
