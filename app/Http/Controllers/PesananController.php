@@ -75,7 +75,7 @@ class PesananController extends Controller
 //         dd($all['barpes']);
 
         $pesananFill = $this->pesananBarang->getFillable();
-        $pesanan = $this->pesananBarang->firstOrCreate($request->only($pesananFill));
+        $pesanan = $this->pesananBarang->Create($request->only($pesananFill));
 
         // dd($all);
         foreach($all['barpes'] as $barpes) {
