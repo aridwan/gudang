@@ -38,7 +38,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="http://localhost:8000"><span><img src="http://localhost:8000/images/Logo Icon.jpg"></span> Gudang ATK</a>
+                <a class="navbar-brand" href="http://localhost/gudang/public/"><span><img src="http://localhost/gudang/public/images/Logo Icon.jpg"></span> Gudang ATK</a>
                 <!--<img src="c:\xampp\htdocs\trustline\trustline\resources\assets\image">-->
 
             </div>
