@@ -77,15 +77,23 @@ class PesananController extends Controller
         $pesananFill = $this->pesananBarang->getFillable();
         $pesanan = $this->pesananBarang->Create($request->only($pesananFill));
 
-        // dd($all);
+//         dd($all, is_numeric($all['barpes'][0]['kuantitas']));
         foreach($all['barpes'] as $barpes) {
-            $barangTerpakai = Barang::find($barpes['barang_id']);
-            $barangTerpakai->used = '1';
-            $barangTerpakai->save();
-            $barang_id = array_pull($barpes, 'barang_id');
-            $pesanan->barangs()->attach($barang_id, $barpes);
+            if(is_int(is_numeric($barpes['kuantitas'])))
+            {
+                $barangTerpakai = Barang::find($barpes['barang_id']);
+                $barangTerpakai->used = '1';
+                $barangTerpakai->save();
+                $barang_id = array_pull($barpes, 'barang_id');
+                $pesanan->barangs()->attach($barang_id, $barpes);
+                return redirect('pesanan/index');
+            }
+            else
+            {
+                return redirect()->back()->withErrors(['Kuantitas harus berupa angka']);
+            }
         }
-        return redirect('pesanan/index');
+
     }
 
     /**

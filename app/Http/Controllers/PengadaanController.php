@@ -68,6 +68,9 @@ class PengadaanController extends Controller
      */
     public function store(Request $request)
     {
+        $this->validate($request,[
+            'penerima'=>'required'
+        ]);
         $all = $request->all();
 //         dd($all);
 
