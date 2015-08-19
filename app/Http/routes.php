@@ -30,6 +30,10 @@ Route::group(['middleware' => ['auth']], function() {
     Route::get('pengajuan/edit/{id}', 'PengajuanController@edit');
     Route::post('pengajuan/update/{id}', 'PengajuanController@update');
 
+    Route::post('pengajuan/diterima/{id}', 'PengajuanController@diterima');
+    Route::post('pengajuan/menunggu/{id}', 'PengajuanController@menunggu');
+    Route::post('pengajuan/ditolak/{id}', 'PengajuanController@ditolak');
+
     Route::get('anggota/index', 'AnggotaController@index');
     Route::get('anggota/create', 'AnggotaController@create');
     Route::post('anggota/store', 'AnggotaController@store');

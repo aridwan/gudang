@@ -29,9 +29,21 @@
                     </div>
                 @endif
                 <div class="form-group">
+                    <label class="col-md-4 control-label">Nama Pengaju</label>
+                    <div class="col-md-6">
+                        <input class="form-control" placeholder="Nama Pengaju" name="pengaju" type="text" value="{{Auth::user()->name}}" readonly>
+                    </div>
+                </div>
+                <div class="form-group">
                     <label class="col-md-4 control-label">Nama Barang</label>
                     <div class="col-md-6">
                         <input class="form-control" placeholder="Nama Barang" name="nama" type="text">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-4 control-label">Kuantitas</label>
+                    <div class="col-md-6">
+                        <input class="form-control" placeholder="Kuantitas" name="kuantitas" type="text">
                     </div>
                 </div>
                 <div class="form-group">

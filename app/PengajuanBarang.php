@@ -8,6 +8,8 @@ class PengajuanBarang extends Model
 {
     protected $fillable = [
         'nama',
+        'pengaju',
+        'kuantitas',
         'keterangan'
     ];
 }

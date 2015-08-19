@@ -17,6 +17,7 @@ class CreatePesananBarangsTable extends Migration
             $table->string('pemesan');
             $table->date('tanggal');
             $table->string('catatan');
+            $table->string('keterangan');
             $table->string('status')->default('Belum dikonfirmasi');
             $table->timestamps();
         });
