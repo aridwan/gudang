@@ -77,19 +77,19 @@
                                 <th class="text-center">Keterangan</th>
                                 <th class="text-center">Status</th>
                             </tr>
-                            @foreach($data as $row)
+                            @foreach($pengajuanuser as $row)
                                 <tr class="text-center">
-                                    <td>{{$row['id']}}</td>
-                                    <td>{{$row['pengaju']}}</td>
-                                    <td>{{$row['nama']}}</td>
-                                    <td>{{$row['kuantitas']}}</td>
-                                    <td>{{$row['keterangan']}}</td>
-                                    @if($row['status'] == 'Diterima')
-                                        <td><span class="label label-success">{{$row['status']}}</span></td>
-                                    @elseif($row['status'] == 'Ditolak')
-                                        <td><span class="label label-danger">{{$row['status']}}</span></td>
+                                    <td>{{$row->id}}</td>
+                                    <td>{{$row->pengaju}}</td>
+                                    <td>{{$row->nama}}</td>
+                                    <td>{{$row->kuantitas}}</td>
+                                    <td>{{$row->keterangan}}</td>
+                                    @if($row->status == 'Diterima')
+                                        <td><span class="label label-success">{{$row->status}}</span></td>
+                                    @elseif($row->status == 'Ditolak')
+                                        <td><span class="label label-danger">{{$row->status}}</span></td>
                                     @else
-                                        <td><span class="label label-default">{{$row['status']}}</span></td>
+                                        <td><span class="label label-default">{{$row->status}}</span></td>
                                     @endif
                                 </tr>
                             @endforeach
