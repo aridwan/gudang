@@ -14,7 +14,7 @@ class UserTableSeeder extends Seeder
     	DB::table('user')->insert([
 			'name' => '5983063P2B',
 			'password' => '5983063P2B'
-		],
+		 ],
 		 [
 		 	'name' => '6083064P2B',
 		 	'password' => '6083064P2B'
