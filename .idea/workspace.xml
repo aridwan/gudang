@@ -35,11 +35,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PengajuanController.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="PengajuanController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/PengajuanController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.230769" vertical-offset="46" max-vertical-offset="2074">
-              <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.61764705" vertical-offset="374" max-vertical-offset="2074">
+              <caret line="43" column="57" selection-start-line="43" selection-start-column="57" selection-end-line="43" selection-end-column="57" />
               <folding>
                 <element signature="e#40#64#0#PHP" expanded="true" />
               </folding>
@@ -99,11 +99,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/aktivitas/pengajuan/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7352941" vertical-offset="1173" max-vertical-offset="1887">
-              <caret line="94" column="39" selection-start-line="94" selection-start-column="39" selection-end-line="94" selection-end-column="39" />
+            <state vertical-scroll-proportion="-12.423077" vertical-offset="1037" max-vertical-offset="1887">
+              <caret line="80" column="56" selection-start-line="80" selection-start-column="56" selection-end-line="80" selection-end-column="56" />
               <folding />
             </state>
           </provider>
@@ -183,8 +183,8 @@
         <option value="$PROJECT_DIR$/resources/views/aktivitas/pengajuan/create.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/routes.php" />
         <option value="$PROJECT_DIR$/app/PengajuanBarang.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/PengajuanController.php" />
         <option value="$PROJECT_DIR$/resources/views/aktivitas/pengajuan/index.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/PengajuanController.php" />
       </list>
     </option>
   </component>
@@ -526,7 +526,7 @@
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="pengajuan/ind&#9;FILE&#9;file://C:/xampp/htdocs/gudang/resources/views/aktivitas/pengajuan/index.blade.php&#10;pengajucon&#9;null&#9;null&#10;pengajuacon&#9;FILE&#9;file://C:/xampp/htdocs/gudang/app/Http/Controllers/PengajuanController.php&#10;pengajuan&#9;FILE&#9;file://C:/xampp/htdocs/gudang/app/PengajuanBarang.php&#10;peng/inde&#9;FILE&#9;file://C:/xampp/htdocs/gudang/resources/views/aktivitas/pengajuan/index.blade.php&#10;pes/ind&#9;FILE&#9;file://C:/xampp/htdocs/gudang/resources/views/aktivitas/pesanan/index.blade.php&#10;rou&#9;FILE&#9;file://C:/xampp/htdocs/gudang/app/Http/routes.php&#10;pescon&#9;FILE&#9;file://C:/xampp/htdocs/gudang/app/Http/Controllers/PesananController.php&#10;pesa/show&#9;FILE&#9;file://C:/xampp/htdocs/gudang/resources/views/aktivitas/pesanan/show.blade.php&#10;pengaj/ind&#9;FILE&#9;file://C:/xampp/htdocs/gudang/resources/views/aktivitas/pengajuan/index.blade.php&#10;peng/ind&#9;null&#9;null&#10;pesan/crea&#9;FILE&#9;file://C:/xampp/htdocs/gudang/resources/views/aktivitas/pesanan/create.blade.php&#10;pengaj/crea&#9;FILE&#9;file://C:/xampp/htdocs/gudang/resources/views/aktivitas/pengajuan/create.blade.php&#10;pengaju/ind&#9;FILE&#9;file://C:/xampp/htdocs/gudang/resources/views/aktivitas/pengajuan/index.blade.php&#10;penga/crea&#9;FILE&#9;file://C:/xampp/htdocs/gudang/resources/views/aktivitas/pengadaan2/create.blade.php&#10;pengajcon&#9;FILE&#9;file://C:/xampp/htdocs/gudang/app/Http/Controllers/PengajuanController.php&#10;pesacon&#9;FILE&#9;file://C:/xampp/htdocs/gudang/app/Http/Controllers/PesananController.php&#10;angg/ind&#9;FILE&#9;file://C:/xampp/htdocs/gudang/resources/views/anggota/index.blade.php&#10;pengaju&#9;FILE&#9;file://C:/xampp/htdocs/gudang/database/migrations/2015_08_18_031832_create_pengajuan_barangs_table.php&#10;routes&#9;FILE&#9;file://C:/xampp/htdocs/gudang/app/Http/routes.php&#10;pengcon&#9;FILE&#9;file://C:/xampp/htdocs/gudang/app/Http/Controllers/PengajuanController.php&#10;pengajua/ind&#9;FILE&#9;file://C:/xampp/htdocs/gudang/resources/views/aktivitas/pengajuan/index.blade.php&#10;0e0da86b48e8638e234da5450796b3b6&#9;FILE&#9;file://C:/xampp/htdocs/gudang/storage/framework/views/0e0da86b48e8638e234da5450796b3b6&#10;pengajuancon&#9;FILE&#9;file://C:/xampp/htdocs/gudang/app/Http/Controllers/PengajuanController.php&#10;pengajua&#9;FILE&#9;file://C:/xampp/htdocs/gudang/app/PengajuanBarang.php&#10;angcon&#9;FILE&#9;file://C:/xampp/htdocs/gudang/app/Http/Controllers/AnggotaController.php&#10;barcon&#9;FILE&#9;file://C:/xampp/htdocs/gudang/app/Http/Controllers/BarangController.php&#10;create&#9;FILE&#9;file://C:/xampp/htdocs/gudang/resources/views/aktivitas/pengajuan/create.blade.php&#10;pesanan&#9;FILE&#9;file://C:/xampp/htdocs/gudang/database/migrations/2015_08_07_033016_create_pesanan_barangs_table.php&#10;angg/edit&#9;FILE&#9;file://C:/xampp/htdocs/gudang/resources/views/anggota/edit.blade.php&#10;pengajuan/create&#9;FILE&#9;file://C:/xampp/htdocs/gudang/resources/views/aktivitas/pengajuan/create.blade.php&#10;pengajuanba&#9;null&#9;null&#10;pes/inde&#9;FILE&#9;file://C:/xampp/htdocs/gudang/resources/views/aktivitas/pesanan/index.blade.php&#10;pesa&#9;FILE&#9;file://C:/xampp/htdocs/gudang/app/Http/Controllers/PesananController.php&#10;rout&#9;FILE&#9;file://C:/xampp/htdocs/gudang/app/Http/routes.php&#10;ap&#9;FILE&#9;file://C:/xampp/htdocs/gudang/resources/views/app.blade.php&#10;pengada&#9;FILE&#9;file://C:/xampp/htdocs/gudang/app/Http/Controllers/PengadaanController.php&#10;bar/ind&#9;FILE&#9;file://C:/xampp/htdocs/gudang/resources/views/barang/index.blade.php&#10;bara/crea&#9;FILE&#9;file://C:/xampp/htdocs/gudang/resources/views/barang/create.blade.php&#10;bara&#9;FILE&#9;file://C:/xampp/htdocs/gudang/database/migrations/2015_08_05_030656_create_barangs_table.php&#10;barangta&#9;FILE&#9;file://C:/xampp/htdocs/gudang/database/migrations/2015_08_05_030656_create_barangs_table.php&#10;pes&#9;FILE&#9;file://C:/xampp/htdocs/gudang/app/Http/Controllers/PesananController.php&#10;pesananba&#9;FILE&#9;file://C:/xampp/htdocs/gudang/app/PesananBarang.php&#10;pes/con&#9;null&#9;null&#10;pes/show&#9;FILE&#9;file://C:/xampp/htdocs/gudang/resources/views/aktivitas/pesanan/show.blade.php&#10;f62ea830c0ac11c9667dc7477acb46c8&#9;FILE&#9;file://C:/xampp/htdocs/gudang/storage/framework/views/f62ea830c0ac11c9667dc7477acb46c8&#10;anggo/crea&#9;FILE&#9;file://C:/xampp/htdocs/gudang/resources/views/anggota/create.blade.php&#10;pesanan/ind&#9;FILE&#9;file://C:/xampp/htdocs/gudang/resources/views/aktivitas/pesanan/index.blade.php&#10;pes/crea&#9;FILE&#9;file://C:/xampp/htdocs/gudang/resources/views/aktivitas/pesanan/create.blade.php" />
+    <property name="SearchEverywhereHistoryKey" value="pengajucon&#9;FILE&#9;file://C:/xampp/htdocs/gudang/app/Http/Controllers/PengajuanController.php&#10;pengajuancon&#9;FILE&#9;file://C:/xampp/htdocs/gudang/app/Http/Controllers/PengajuanController.php&#10;pengajuan/ind&#9;FILE&#9;file://C:/xampp/htdocs/gudang/resources/views/aktivitas/pengajuan/index.blade.php&#10;pengajuacon&#9;FILE&#9;file://C:/xampp/htdocs/gudang/app/Http/Controllers/PengajuanController.php&#10;pengajuan&#9;FILE&#9;file://C:/xampp/htdocs/gudang/app/PengajuanBarang.php&#10;peng/inde&#9;FILE&#9;file://C:/xampp/htdocs/gudang/resources/views/aktivitas/pengajuan/index.blade.php&#10;pes/ind&#9;FILE&#9;file://C:/xampp/htdocs/gudang/resources/views/aktivitas/pesanan/index.blade.php&#10;rou&#9;FILE&#9;file://C:/xampp/htdocs/gudang/app/Http/routes.php&#10;pescon&#9;FILE&#9;file://C:/xampp/htdocs/gudang/app/Http/Controllers/PesananController.php&#10;pesa/show&#9;FILE&#9;file://C:/xampp/htdocs/gudang/resources/views/aktivitas/pesanan/show.blade.php&#10;pengaj/ind&#9;FILE&#9;file://C:/xampp/htdocs/gudang/resources/views/aktivitas/pengajuan/index.blade.php&#10;peng/ind&#9;null&#9;null&#10;pesan/crea&#9;FILE&#9;file://C:/xampp/htdocs/gudang/resources/views/aktivitas/pesanan/create.blade.php&#10;pengaj/crea&#9;FILE&#9;file://C:/xampp/htdocs/gudang/resources/views/aktivitas/pengajuan/create.blade.php&#10;pengaju/ind&#9;FILE&#9;file://C:/xampp/htdocs/gudang/resources/views/aktivitas/pengajuan/index.blade.php&#10;penga/crea&#9;FILE&#9;file://C:/xampp/htdocs/gudang/resources/views/aktivitas/pengadaan2/create.blade.php&#10;pengajcon&#9;FILE&#9;file://C:/xampp/htdocs/gudang/app/Http/Controllers/PengajuanController.php&#10;pesacon&#9;FILE&#9;file://C:/xampp/htdocs/gudang/app/Http/Controllers/PesananController.php&#10;angg/ind&#9;FILE&#9;file://C:/xampp/htdocs/gudang/resources/views/anggota/index.blade.php&#10;pengaju&#9;FILE&#9;file://C:/xampp/htdocs/gudang/database/migrations/2015_08_18_031832_create_pengajuan_barangs_table.php&#10;routes&#9;FILE&#9;file://C:/xampp/htdocs/gudang/app/Http/routes.php&#10;pengcon&#9;FILE&#9;file://C:/xampp/htdocs/gudang/app/Http/Controllers/PengajuanController.php&#10;pengajua/ind&#9;FILE&#9;file://C:/xampp/htdocs/gudang/resources/views/aktivitas/pengajuan/index.blade.php&#10;0e0da86b48e8638e234da5450796b3b6&#9;FILE&#9;file://C:/xampp/htdocs/gudang/storage/framework/views/0e0da86b48e8638e234da5450796b3b6&#10;pengajua&#9;FILE&#9;file://C:/xampp/htdocs/gudang/app/PengajuanBarang.php&#10;angcon&#9;FILE&#9;file://C:/xampp/htdocs/gudang/app/Http/Controllers/AnggotaController.php&#10;barcon&#9;FILE&#9;file://C:/xampp/htdocs/gudang/app/Http/Controllers/BarangController.php&#10;create&#9;FILE&#9;file://C:/xampp/htdocs/gudang/resources/views/aktivitas/pengajuan/create.blade.php&#10;pesanan&#9;FILE&#9;file://C:/xampp/htdocs/gudang/database/migrations/2015_08_07_033016_create_pesanan_barangs_table.php&#10;angg/edit&#9;FILE&#9;file://C:/xampp/htdocs/gudang/resources/views/anggota/edit.blade.php&#10;pengajuan/create&#9;FILE&#9;file://C:/xampp/htdocs/gudang/resources/views/aktivitas/pengajuan/create.blade.php&#10;pengajuanba&#9;null&#9;null&#10;pes/inde&#9;FILE&#9;file://C:/xampp/htdocs/gudang/resources/views/aktivitas/pesanan/index.blade.php&#10;pesa&#9;FILE&#9;file://C:/xampp/htdocs/gudang/app/Http/Controllers/PesananController.php&#10;rout&#9;FILE&#9;file://C:/xampp/htdocs/gudang/app/Http/routes.php&#10;ap&#9;FILE&#9;file://C:/xampp/htdocs/gudang/resources/views/app.blade.php&#10;pengada&#9;FILE&#9;file://C:/xampp/htdocs/gudang/app/Http/Controllers/PengadaanController.php&#10;bar/ind&#9;FILE&#9;file://C:/xampp/htdocs/gudang/resources/views/barang/index.blade.php&#10;bara/crea&#9;FILE&#9;file://C:/xampp/htdocs/gudang/resources/views/barang/create.blade.php&#10;bara&#9;FILE&#9;file://C:/xampp/htdocs/gudang/database/migrations/2015_08_05_030656_create_barangs_table.php&#10;barangta&#9;FILE&#9;file://C:/xampp/htdocs/gudang/database/migrations/2015_08_05_030656_create_barangs_table.php&#10;pes&#9;FILE&#9;file://C:/xampp/htdocs/gudang/app/Http/Controllers/PesananController.php&#10;pesananba&#9;FILE&#9;file://C:/xampp/htdocs/gudang/app/PesananBarang.php&#10;pes/con&#9;null&#9;null&#10;pes/show&#9;FILE&#9;file://C:/xampp/htdocs/gudang/resources/views/aktivitas/pesanan/show.blade.php&#10;f62ea830c0ac11c9667dc7477acb46c8&#9;FILE&#9;file://C:/xampp/htdocs/gudang/storage/framework/views/f62ea830c0ac11c9667dc7477acb46c8&#10;anggo/crea&#9;FILE&#9;file://C:/xampp/htdocs/gudang/resources/views/anggota/create.blade.php&#10;pesanan/ind&#9;FILE&#9;file://C:/xampp/htdocs/gudang/resources/views/aktivitas/pesanan/index.blade.php&#10;pes/crea&#9;FILE&#9;file://C:/xampp/htdocs/gudang/resources/views/aktivitas/pesanan/create.blade.php" />
     <property name="options.lastSelected" value="preferences.keymap" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
@@ -1016,21 +1016,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/PengajuanController.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/aktivitas/pengajuan/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.230769" vertical-offset="46" max-vertical-offset="2074">
-          <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
-          <folding>
-            <element signature="e#40#64#0#PHP" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="-12.423077" vertical-offset="1037" max-vertical-offset="1887">
+          <caret line="80" column="56" selection-start-line="80" selection-start-column="56" selection-end-line="80" selection-end-column="56" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/aktivitas/pengajuan/index.blade.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/PengajuanController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7352941" vertical-offset="1173" max-vertical-offset="1887">
-          <caret line="94" column="39" selection-start-line="94" selection-start-column="39" selection-end-line="94" selection-end-column="39" />
-          <folding />
+        <state vertical-scroll-proportion="0.61764705" vertical-offset="374" max-vertical-offset="2074">
+          <caret line="43" column="57" selection-start-line="43" selection-start-column="57" selection-end-line="43" selection-end-column="57" />
+          <folding>
+            <element signature="e#40#64#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

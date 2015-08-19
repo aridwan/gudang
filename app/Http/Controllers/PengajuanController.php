@@ -41,7 +41,7 @@ class PengajuanController extends Controller
         $pesanan = PengajuanBarang::find($id);
         $pesanan->status = 'Diterima';
         $pesanan->save();
-        Barang::firstOrCreate(['nama' => $pesanan['nama'],'keterangan' => $pesanan['keterangan']]);
+        Barang::firstOrCreate(['nama' => $pesanan['nama']]);
         return redirect('pengajuan/index');
     }
 
