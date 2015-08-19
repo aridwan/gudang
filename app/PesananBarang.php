@@ -9,6 +9,7 @@ class PesananBarang extends Model
     protected $fillable = [
         'pemesan',
         'tanggal',
+        'keterangan',
         'catatan'
     ];
 

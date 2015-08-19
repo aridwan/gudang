@@ -70,6 +70,7 @@
                             </div>
                         </div>
                         <br>
+                        <br>
                         <div class="form-group">
                             <label class="col-md-2 control-label">Catatan </label>
                             <div class="col-md-2">
@@ -93,7 +94,22 @@
                             @endforeach
                         </table>
                         <br>
-                        
+                        <div class="col-md-6">
+                            @if(Auth::user()->name == 'SUPERVISOR')
+                                {!! Form::open(['url' => 'pesanan/keterangan/'.$pesananBarang->id, 'class' => 'form-horizontal']) !!}
+                                    <label class="col-md-4 control-label">Keterangan :</label>
+                                    <div class="col-md-8">
+                                        <textarea class="form-control" type="text" name="keterangan" placeholder="hanya dapat diisi admin">{{$pesananBarang->keterangan}}</textarea>
+                                    </div>
+                                    <div class="col-md-offset-8">
+                                        <button type="submit" class="btn btn-primary btn-sm">Beri keterangan</button>
+                                    </div>
+                                {!!Form::close()!!}
+                            @else
+                                <label class="col-md-4 control-label">Keterangan :</label>
+                                <label class="col-md-4 control-label">{{$pesananBarang->keterangan}}</label>
+                            @endif
+                        </div>
                     @endif
                 </div>
             </div>

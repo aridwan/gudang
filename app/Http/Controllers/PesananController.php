@@ -176,6 +176,15 @@ class PesananController extends Controller
         $pesanan->save();
         return redirect('pesanan/index');
     }
+
+    public function keterangan(Request $request, $id)
+    {
+        $all = $request->all();
+        $pesanan = PesananBarang::find($id);
+        $pesanan->keterangan = $all['keterangan'];
+        $pesanan->save();
+        return redirect('pesanan/index');
+    }
     /**
      * Remove the specified resource from storage.
      *

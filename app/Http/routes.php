@@ -52,6 +52,7 @@ Route::group(['middleware' => ['auth']], function() {
     Route::post('pesanan/diterima/{id}', 'PesananController@diterima');
     Route::post('pesanan/menunggu/{id}', 'PesananController@menunggu');
     Route::post('pesanan/ditolak/{id}', 'PesananController@ditolak');
+    Route::post('pesanan/keterangan/{id}', 'PesananController@keterangan');
 
     Route::get('pengadaan/index', 'PengadaanController@index');
     Route::get('pengadaan/create', 'PengadaanController@create');

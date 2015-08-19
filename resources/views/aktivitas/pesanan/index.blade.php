@@ -49,7 +49,7 @@
                                             <td><label class="control-label"><span class="label label-warning">{{$row->status}}</span></label ></td>
                                         @endif
                                         <td class="text-center">
-                                            {!!link_to('pesanan/show/'.$row['id'], 'show', ['class' => 'btn btn-default btn-sm'])!!}
+                                            {!!link_to('pesanan/show/'.$row['id'], 'show', ['class' => 'btn btn-info btn-sm'])!!}
                                         </td>
                                     </tr>
                                 @endforeach
