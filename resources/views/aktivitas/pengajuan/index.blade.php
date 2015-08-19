@@ -30,47 +30,70 @@
                 <div class="panel-heading">Pengajuan Barang</div>
                 @if(sizeof($data))
                     <table class="table table-bordered table-striped">
-                        <tr>
-                            <th class="text-center">Kode</th>
-                            <th class="text-center">Pengaju</th>
-                            <th class="text-center">Nama</th>
-                            <th class="text-center">Kuantitas</th>
-                            <th class="text-center">Keterangan</th>
-                            <th class="text-center">Status</th>
-                            @if(Auth::user()->name == 'SUPERVISOR')
+                        @if(Auth::check() && Auth::user()->name == 'SUPERVISOR')
+                            <tr>
+                                <th class="text-center">Kode</th>
+                                <th class="text-center">Pengaju</th>
+                                <th class="text-center">Nama</th>
+                                <th class="text-center">Kuantitas</th>
+                                <th class="text-center">Keterangan</th>
+                                <th class="text-center">Status</th>
                                 <th class="text-center">Pilihan</th>
-                            @endif
-                        </tr>
-                        @foreach($data as $row)
-                            <tr class="text-center">
-                                <td>{{$row['id']}}</td>
-                                <td>{{$row['pengaju']}}</td>
-                                <td>{{$row['nama']}}</td>
-                                <td>{{$row['kuantitas']}}</td>
-                                <td>{{$row['keterangan']}}</td>
-                                @if($row['status'] == 'Diterima')
-                                    <td><span class="label label-success">{{$row['status']}}</span></td>
-                                @elseif($row['status'] == 'Ditolak')
-                                    <td><span class="label label-danger">{{$row['status']}}</span></td>
-                                @else
-                                    <td><span class="label label-default">{{$row['status']}}</span></td>
-                                @endif
-                                @if(Auth::user()->name == 'SUPERVISOR')
-                                    <td>
-                                        <div class="col-md-2">
-                                            {!! Form::open(['url' => 'pengajuan/diterima/'.$row->id, 'class' => 'form-horizontal']) !!}
-                                                <button class="btn btn-success btn-sm">Terima</button>
-                                            {!!Form::close()!!}
-                                        </div>
-                                        <div class="col-md-2">
-                                            {!! Form::open(['url' => 'pengajuan/ditolak/'.$row->id, 'class' => 'form-horizontal']) !!}
-                                              <button class="btn btn-danger btn-sm">Tolak</button>
-                                            {!!Form::close()!!}
-                                        </div>
-                                    </td>
-                                    @endif
                             </tr>
+                            @foreach($data as $row)
+                                <tr class="text-center">
+                                    <td>{{$row['id']}}</td>
+                                    <td>{{$row['pengaju']}}</td>
+                                    <td>{{$row['nama']}}</td>
+                                    <td>{{$row['kuantitas']}}</td>
+                                    <td>{{$row['keterangan']}}</td>
+                                    @if($row['status'] == 'Diterima')
+                                        <td><span class="label label-success">{{$row['status']}}</span></td>
+                                    @elseif($row['status'] == 'Ditolak')
+                                        <td><span class="label label-danger">{{$row['status']}}</span></td>
+                                    @else
+                                        <td><span class="label label-default">{{$row['status']}}</span></td>
+                                    @endif
+                                        <td>
+                                            <div class="col-md-2">
+                                                {!! Form::open(['url' => 'pengajuan/diterima/'.$row->id, 'class' => 'form-horizontal']) !!}
+                                                    <button class="btn btn-success btn-sm">Terima</button>
+                                                {!!Form::close()!!}
+                                            </div>
+                                            <div class="col-md-2">
+                                                {!! Form::open(['url' => 'pengajuan/ditolak/'.$row->id, 'class' => 'form-horizontal']) !!}
+                                                  <button class="btn btn-danger btn-sm">Tolak</button>
+                                                {!!Form::close()!!}
+                                            </div>
+                                        </td>
+                                </tr>
                         @endforeach
+                        @elseif(Auth::check())
+                            <tr>
+                                <th class="text-center">Kode</th>
+                                <th class="text-center">Pengaju</th>
+                                <th class="text-center">Nama</th>
+                                <th class="text-center">Kuantitas</th>
+                                <th class="text-center">Keterangan</th>
+                                <th class="text-center">Status</th>
+                            </tr>
+                            @foreach($data as $row)
+                                <tr class="text-center">
+                                    <td>{{$row['id']}}</td>
+                                    <td>{{$row['pengaju']}}</td>
+                                    <td>{{$row['nama']}}</td>
+                                    <td>{{$row['kuantitas']}}</td>
+                                    <td>{{$row['keterangan']}}</td>
+                                    @if($row['status'] == 'Diterima')
+                                        <td><span class="label label-success">{{$row['status']}}</span></td>
+                                    @elseif($row['status'] == 'Ditolak')
+                                        <td><span class="label label-danger">{{$row['status']}}</span></td>
+                                    @else
+                                        <td><span class="label label-default">{{$row['status']}}</span></td>
+                                    @endif
+                                </tr>
+                            @endforeach
+                            @endif
                     </table>
                 @else
                     <div class="panel-body">

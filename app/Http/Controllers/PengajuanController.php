@@ -23,7 +23,7 @@ class PengajuanController extends Controller
     {
         $data = PengajuanBarang::all();
         $pengajuanuser = DB::table('pengajuan_barangs')->where('pengaju','=',Auth::user()->name)->get();
-        return view('aktivitas.pengajuan.index', compact('data'));
+        return view('aktivitas.pengajuan.index', compact('data','pengajuanuser'));
     }
 
     /**
