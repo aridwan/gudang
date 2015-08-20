@@ -55,12 +55,12 @@
                                         <td><span class="label label-default">{{$row['status']}}</span></td>
                                     @endif
                                         <td>
-                                            <div class="col-md-2">
+                                            <div class="col-md-2 col-md-offset-3">
                                                 {!! Form::open(['url' => 'pengajuan/diterima/'.$row->id, 'class' => 'form-horizontal']) !!}
                                                     <button class="btn btn-success btn-sm">Terima</button>
                                                 {!!Form::close()!!}
                                             </div>
-                                            <div class="col-md-2">
+                                            <div class="col-md-2 col-md-offset-1">
                                                 {!! Form::open(['url' => 'pengajuan/ditolak/'.$row->id, 'class' => 'form-horizontal']) !!}
                                                   <button class="btn btn-danger btn-sm">Tolak</button>
                                                 {!!Form::close()!!}
