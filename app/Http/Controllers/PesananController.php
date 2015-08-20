@@ -61,6 +61,23 @@ class PesananController extends Controller
         else{
             return redirect()->back()->withErrors(['Data barang kosong, silahkan mengisi Form Pengajuan Barang terlebih dahulu!']);
         }
+
+        foreach($all['barpes'] as $barpes) {
+            if(is_numeric($barpes['kuantitas']))
+            {
+                $barangTerpakai = Barang::find($barpes['barang_id']);
+                $barangTerpakai->used = '1';
+                $barangTerpakai->save();
+                $barang_id = array_pull($barpes, 'barang_id');
+                $pesanan->barangs()->attach($barang_id, $barpes);
+                return redirect('pesanan/index');
+            }
+            else
+            {
+                return redirect()->back()->withErrors(['Kuantitas harus berupa angka']);
+            }
+        }
+
     }
 
     /**

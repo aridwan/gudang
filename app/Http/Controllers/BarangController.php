@@ -46,9 +46,16 @@ class BarangController extends Controller
     public function store(Request $request)
     {
         $fill = $request->all();
-        Barang::create($fill);
-        //dd($fill);
-        return redirect()->action('BarangController@index');
+        if(is_numeric($fill['kuantitas']))
+        {
+            Barang::create($fill);
+            //dd($fill);
+            return redirect()->action('BarangController@index');
+
+        }
+        else{
+            return redirect()->back()->withErrors(['Kuantitas harus berupa angka!']);
+        }
     }
 
     /**
