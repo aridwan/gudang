@@ -29,17 +29,17 @@
                                 @if(Auth::user()->name == 'SUPERVISOR')
                                     <div class="col-md-2">
                                         {!! Form::open(['url' => 'pesanan/diterima/'.$pesananBarang->id, 'class' => 'form-horizontal']) !!}
-                                            <button class="btn btn-success btn-sm">Diterima</button>
+                                            <button class="btn btn-success btn-sm">Terima</button>
                                         {!!Form::close()!!}
                                     </div>
                                     <div class="col-md-3  col-md-offset-1">
                                         {!! Form::open(['url' => 'pesanan/menunggu/'.$pesananBarang->id, 'class' => 'form-horizontal']) !!}
-                                        <button class="btn btn-warning btn-sm">Harap Menunggu</button>
+                                        <button class="btn btn-warning btn-sm">Tunggu</button>
                                         {!!Form::close()!!}
                                     </div>
-                                    <div class="col-md-2  col-md-offset-1">
+                                    <div class="col-md-2">
                                         {!! Form::open(['url' => 'pesanan/ditolak/'.$pesananBarang->id, 'class' => 'form-horizontal']) !!}
-                                            <button class="btn btn-danger btn-sm">Ditolak</button>
+                                            <button class="btn btn-danger btn-sm">Tolak</button>
                                         {!!Form::close()!!}
                                     </div>
                                 @else

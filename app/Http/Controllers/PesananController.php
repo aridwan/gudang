@@ -79,7 +79,7 @@ class PesananController extends Controller
 
 //         dd($all, is_numeric($all['barpes'][0]['kuantitas']));
         foreach($all['barpes'] as $barpes) {
-            if(is_int(is_numeric($barpes['kuantitas'])))
+            if(is_numeric($barpes['kuantitas']))
             {
                 $barangTerpakai = Barang::find($barpes['barang_id']);
                 $barangTerpakai->used = '1';
