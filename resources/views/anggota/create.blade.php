@@ -44,7 +44,7 @@
                     <div class="form-group">
                         <label class="col-md-4 control-label">Departemen</label>
                         <div class="col-md-6">
-                            <select class="form-control chosen-select" name="jabatan">
+                            <select class="form-control chosen-select" name="jabatan" id="tes">
                                 <option value="ADMINISTRASI DAN UMUM">ADMINISTRASI DAN UMUM</option>
                                 <option value="STAFF AHLI">STAFF AHLI</option>
                                 <option value="FASILITAS OPERASI">FASILITAS OPERASI</option>
@@ -81,4 +81,19 @@
             </div>
         </div>
     </div>
+@endsection
+
+@section('js')
+    <script type="text/javascript" >
+        var config = {
+            '.chosen-select'           : {},
+            '.chosen-select-deselect'  : {allow_single_deselect:true},
+            '.chosen-select-no-single' : {disable_search_threshold:10},
+            '.chosen-select-no-results': {no_results_text:'Oops, nothing found!'},
+            '.chosen-select-width'     : {width:"95%"}
+        }
+        for (var selector in config) {
+            $(selector).chosen(config[selector]);
+        }
+    </script>
 @endsection
