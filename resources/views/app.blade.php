@@ -122,8 +122,9 @@
                                 {{ Auth::user()->name }} <span class="caret"></span>
                             </a>
                             <ul class="dropdown-menu" role="menu">
-                                <li>{!!link_to('guest_password/index', 'Ubah Password')!!}</li>
+                                <li>{!!link_to('guest_password/index', 'Change Password')!!}</li>
                                 <li>{!!link_to('auth/logout', 'Logout')!!}</li>
+                                <li>{!!link_to('auth/help', 'Help')!!}</li>
                             </ul>
                         </li>
                     @endif

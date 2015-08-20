@@ -66,6 +66,14 @@ Route::group(['middleware' => ['auth']], function() {
     Route::get('guest_anggota/index', 'UserController@anggota');
     Route::get('guest_password/index', 'UserController@passwordEdit');
     Route::post('guest_password/update/{id}', 'UserController@passwordUpdate');
+
+    Route::get('help/index', 'HelpController@index');
+    Route::get('help/create', 'HelpController@create');
+    Route::post('help/store', 'HelpController@store');
+    Route::get('help/destroy/{id}', 'HelpController@destroy');
+    Route::get('help/edit/{id}', 'HelpController@edit');
+    Route::post('help/update/{id}', 'HelpController@update');
+
 });
 
 //Custom Auth
