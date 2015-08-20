@@ -44,7 +44,7 @@
                     <div class="form-group">
                         <label class="col-md-4 control-label">Departemen</label>
                         <div class="col-md-6">
-                            <select class="form-control dropdown" name="jabatan">
+                            <select class="form-control chosen-select" name="jabatan">
                                 <option value="ADMINISTRASI DAN UMUM">ADMINISTRASI DAN UMUM</option>
                                 <option value="STAFF AHLI">STAFF AHLI</option>
                                 <option value="FASILITAS OPERASI">FASILITAS OPERASI</option>
