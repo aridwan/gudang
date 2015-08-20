@@ -31,19 +31,19 @@
                     <div class="form-group">
                         <label class="col-md-4 control-label">Password Lama</label>
                         <div class="col-md-6">
-                            <input class="form-control" name="password" type="text">
+                            <input class="form-control" name="password" type="password">
                         </div>
                     </div>
                     <div class="form-group">
                         <label class="col-md-4 control-label">Password Baru</label>
                         <div class="col-md-6">
-                            <input class="form-control" name="password2" type="text">
+                            <input class="form-control" name="password2" type="password">
                         </div>
                     </div>
                     <div class="form-group">
                         <label class="col-md-4 control-label">Ulangi Password Baru</label>
                         <div class="col-md-6">
-                            <input class="form-control" name="password_ulangi" type="text">
+                            <input class="form-control" name="password_ulangi" type="password">
                         </div>
                     </div>
                     <div class="form-group">
