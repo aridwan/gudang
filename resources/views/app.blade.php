@@ -11,6 +11,9 @@
     {!! HTML::style('css/bootstrap.min.css') !!}
     {!! HTML::style('css/bootstrap.css') !!}
     {!! HTML::style('css/bootswatch.min.css') !!}
+    {!! HTML::style('css/style.css') !!}
+    {!! HTML::style('css/prism.css') !!}
+    {!! HTML::style('css/chosen.css') !!}
     {{--{!! HTML::style('css/jquery-ui.structure.min.css') !!}--}}
     {{--{!! HTML::style('css/jquery-ui.theme.min.css') !!}--}}
     {{--{!! HTML::style('css/jquery.appendGrid-1.5.2.css') !!}--}}
@@ -135,6 +138,8 @@
     {!! HTML::script('js/bootstrap.min.js') !!}
     {!! HTML::script('js/bootswatch.min.js') !!}
     {!! HTML::script('js/bootswatch.js') !!}
+    {!! HTML::script('js/chosen.jquery.js') !!}
+    {!! HTML::script('js/prism.js') !!}
 
     {!! HTML::script('js/jquery-1.11.1.min.js') !!}
     {!! HTML::script('js/jquery-ui-1.11.1.min.js') !!}
