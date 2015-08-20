@@ -1094,6 +1094,7 @@ body {
   color: #555555;
   background-image: url("http://localhost/gudang/public/images/PLN gudang2.jpg");
   background-repeat: no-repeat;
+  background-attachment: fixed;
   background-position: 870px 370px;
     
   background-color: #ffffff;
