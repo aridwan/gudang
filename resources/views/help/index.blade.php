@@ -2,7 +2,7 @@
 
 @section('title')
     @parent
-    Home
+    Help
 @stop
 
 @section('content')
@@ -10,37 +10,15 @@
         <div class="col-md-10 col-md-offset-1">
             <br>
             <div class="panel panel-default">
-                <div class="panel-heading">Home</div>
-
-                <div class="col-md-4 col-md-offset-4">
-                    
-                </div>
-                
-                @if(Auth::check())
-                    <div class="panel-body  col-md-2 col-md-offset-5">
-                        <img  src="http://localhost/gudang/public/images/Bolam.jpg">
-                        You are logged in!
+                <div class="panel-heading">Help</div>
+                    <div class="panel-body">
+                            <font class="col-md-offset-3" color="blue" size="6">
+                                Alur Proses Pemesanan Barang                       
+                            </font>
                     </div>
                     <div class="panel-body">
-                        <marquee>
-                            <font color="blue" size="6">
-                                Selamat Datang di Gudang ATK - PT. PLN (Persero) ...
-                            </font>
-                        </marquee>
-                    </div>
-                @else
-
-                <div class="panel-body"> 
-                    <div class="col-md-4 col-md-offset-4">
-                    <span><img src="http://localhost/gudang/public/images/Cover.jpg"></span>
-                    </div>
-                    <div class="col-md-2 col-md-offset-6">    
-                        Please login!
-                    </div>
-
-                </div>
-
-                @endif
+                        <img  src="http://localhost/gudang/public/images/ALURrapi2.jpg">
+                    </div> 
             </div>
         </div>
     </div>
