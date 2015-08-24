@@ -36,7 +36,7 @@
                                 <th class="text-center">Pengaju</th>
                                 <th class="text-center">Nama</th>
                                 <th class="text-center">Kuantitas</th>
-                                <th class="text-center">Keterangan</th>
+                                <!-- <th class="text-center">Keterangan</th> -->
                                 <th class="text-center">Status</th>
                                 <th class="text-center">Pilihan</th>
                             </tr>
@@ -46,7 +46,7 @@
                                     <td>{{$row['pengaju']}}</td>
                                     <td>{{$row['nama']}}</td>
                                     <td>{{$row['kuantitas']}}</td>
-                                    <td>{{$row['keterangan']}}</td>
+                                    <!-- <td>{{$row['keterangan']}}</td> -->
                                     @if($row['status'] == 'Diterima')
                                         <td><span class="label label-success">{{$row['status']}}</span></td>
                                     @elseif($row['status'] == 'Ditolak')
@@ -74,7 +74,7 @@
                                 <th class="text-center">Pengaju</th>
                                 <th class="text-center">Nama</th>
                                 <th class="text-center">Kuantitas</th>
-                                <th class="text-center">Keterangan</th>
+                                <!-- <th class="text-center">Keterangan</th> -->
                                 <th class="text-center">Status</th>
                             </tr>
                             @foreach($pengajuanuser as $row)
@@ -83,7 +83,7 @@
                                     <td>{{$row->pengaju}}</td>
                                     <td>{{$row->nama}}</td>
                                     <td>{{$row->kuantitas}}</td>
-                                    <td>{{$row->keterangan}}</td>
+                                    <!-- <td>{{$row->keterangan}}</td> -->
                                     @if($row->status == 'Diterima')
                                         <td><span class="label label-success">{{$row->status}}</span></td>
                                     @elseif($row->status == 'Ditolak')

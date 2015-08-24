@@ -17,14 +17,12 @@
                             <th class="text-center">NIP</th>
                             <th class="text-center">Nama</th>
                             <th class="text-center">Unit Organisasi</th>
-                            <th class="text-center">Email</th>
                         </tr>
                         @foreach($data as $row)
                             <tr class="text-center">
                                 <td>{{$row['nip']}}</td>
                                 <td>{{$row['nama']}}</td>
                                 <td>{{$row['jabatan']}}</td>
-                                <td>{{$row['email']}}</td>
                             </tr>
                         @endforeach
                     </table>

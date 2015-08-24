@@ -53,6 +53,7 @@ class AnggotaController extends Controller
         $this->validate($request,['password' => 'required|min:6|same:confirm_password']);
         $data = $request->all();
         $fill1['name'] = $data['nip'];
+        $fill1['nama'] = $data['nama'];
         $fill1['password'] = bcrypt($data['password']) ;
 
         $fill2['nip'] = $data['nip'];

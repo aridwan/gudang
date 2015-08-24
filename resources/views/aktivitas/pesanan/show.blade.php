@@ -1,3 +1,4 @@
+
 @extends('app')
 
 @section('title')
@@ -22,36 +23,11 @@
                             <div class="col-md-2">
                                 <label class="control-label">PS-{{$pesananBarang->id}}</label>
                             </div>
-                            <div class="col-md-2">
-                                <label class="control-label">Konfirmasi : </label>
-                            </div>
                             <div class="col-md-6">
                                 @if(Auth::user()->name == 'SUPERVISOR')
-                                    <div class="col-md-2">
-                                        {!! Form::open(['url' => 'pesanan/diterima/'.$pesananBarang->id, 'class' => 'form-horizontal']) !!}
-                                            <button class="btn btn-success btn-sm">Terima</button>
-                                        {!!Form::close()!!}
-                                    </div>
-                                    <div class="col-md-3  col-md-offset-1">
-                                        {!! Form::open(['url' => 'pesanan/menunggu/'.$pesananBarang->id, 'class' => 'form-horizontal']) !!}
-                                        <button class="btn btn-warning btn-sm">Tunggu</button>
-                                        {!!Form::close()!!}
-                                    </div>
-                                    <div class="col-md-2">
-                                        {!! Form::open(['url' => 'pesanan/ditolak/'.$pesananBarang->id, 'class' => 'form-horizontal']) !!}
-                                            <button class="btn btn-danger btn-sm">Tolak</button>
-                                        {!!Form::close()!!}
-                                    </div>
+                                    
                                 @else
-                                    @if($pesananBarang->status == 'Belum dikonfirmasi')
-                                        <label class="control-label"><span class="label label-default">{{$pesananBarang->status}}</span></label >
-                                    @elseif($pesananBarang->status == 'Diterima')
-                                        <label class="control-label"><span class="label label-success">{{$pesananBarang->status}}</span></label >
-                                    @elseif($pesananBarang->status == 'Ditolak')
-                                        <label class="control-label"><span class="label label-danger">{{$pesananBarang ->status}}</span></label >
-                                    @else
-                                        <label class="control-label"><span class="label label-warning">{{$pesananBarang->status}}</span></label >
-                                    @endif
+                                    
                                 @endif
                             </div>
                         </div>
@@ -94,20 +70,62 @@
                             @endforeach
                         </table>
                         <br>
-                        <div class="col-md-6">
+                        <div class="col-md-12">
+                            <div class="col-md-3">
+                                <br>
+                                <label class="control-label">Konfirmasi : </label>
+                                <br>
+                            </div>
+                            <br>
+
                             @if(Auth::user()->name == 'SUPERVISOR')
-                                {!! Form::open(['url' => 'pesanan/keterangan/'.$pesananBarang->id, 'class' => 'form-horizontal']) !!}
-                                    <label class="col-md-4 control-label">Keterangan :</label>
+                                    <div class="col-md-1">
+                                        {!! Form::open(['url' => 'pesanan/diterima/'.$pesananBarang->id, 'class' => 'form-horizontal']) !!}
+                                            <button class="btn btn-success btn-sm">Terima</button>
+                                        {!!Form::close()!!}
+                                    </div>
+                                    <div class="col-md-1">
+                                        {!! Form::open(['url' => 'pesanan/menunggu/'.$pesananBarang->id, 'class' => 'form-horizontal']) !!}
+                                        <button class="btn btn-warning btn-sm">Tunggu</button>
+                                        {!!Form::close()!!}
+                                    </div>
+                                    <div class="col-md-1">
+                                        {!! Form::open(['url' => 'pesanan/ditolak/'.$pesananBarang->id, 'class' => 'form-horizontal']) !!}
+                                            <button class="btn btn-danger btn-sm">Tolak</button>
+                                            <br>
+
+                                        {!!Form::close()!!}
+                                    </div>
+                                    <br>
+                                    <br>
+                                    <div class="col-md-3">
+                                            <label class="control-label">Keterangan :</label>
+                                    </div>                                 
+                                    {!! Form::open(['url' => 'pesanan/keterangan/'.$pesananBarang->id, 'class' => 'form-horizontal']) !!}
+                                    
+                                    <br>
                                     <div class="col-md-8">
                                         <textarea class="form-control" type="text" name="keterangan" placeholder="hanya dapat diisi admin">{{$pesananBarang->keterangan}}</textarea>
                                     </div>
-                                    <div class="col-md-offset-8">
+                                    <br>
+                                    <div class="col-md-offset-9 col-md-3">
                                         <button type="submit" class="btn btn-primary btn-sm">Beri keterangan</button>
                                     </div>
                                 {!!Form::close()!!}
                             @else
-                                <label class="col-md-4 control-label">Keterangan :</label>
-                                <label class="col-md-4 control-label">{{$pesananBarang->keterangan}}</label>
+                            @if($pesananBarang->status == 'Belum dikonfirmasi')
+                                        <label class="control-label"><span class="label label-default">{{$pesananBarang->status}}</span></label >
+                                    @elseif($pesananBarang->status == 'Diterima')
+                                        <label class="control-label"><span class="label label-success">{{$pesananBarang->status}}</span></label >
+                                    @elseif($pesananBarang->status == 'Ditolak')
+                                        <label class="control-label"><span class="label label-danger">{{$pesananBarang ->status}}</span></label >
+                                    @else
+                                        <label class="control-label"><span class="label label-warning">{{$pesananBarang->status}}</span></label >
+                                    @endif
+                                    <br>
+                                <label class="col-md-3 control-label">Keterangan :</label>
+
+                                <label class="control-label">{{$pesananBarang->keterangan}}</label>
                             @endif
                         </div>
                     @endif

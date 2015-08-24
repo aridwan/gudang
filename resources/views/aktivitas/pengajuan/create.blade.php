@@ -46,12 +46,12 @@
                         <input class="form-control" placeholder="Kuantitas" name="kuantitas" type="text">
                     </div>
                 </div>
-                <div class="form-group">
+<!--                 <div class="form-group">
                     <label class="col-md-4 control-label">Keterangan </label>
                     <div class="col-md-6">
                         <input class="form-control" placeholder="Keterangan" name="keterangan" type="text">
                     </div>
-                </div>
+                </div> -->
                 <div class="form-group">
                     <div class="col-md-6 col-md-offset-8">
                         <button type="submit" class="btn btn-primary">
