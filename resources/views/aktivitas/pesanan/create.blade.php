@@ -43,7 +43,7 @@
                     <div class="form-group">
                         <label class="col-md-2 control-label">Pemesan</label>
                         <div class="col-md-3">
-                            <input class="form-control" name="pemesan" value="{{Auth::user()->name}}" readonly>
+                            <input class="form-control" name="pemesan" value="{{Auth::user()->nama}}" readonly>
                         </div>
                     </div>
                     <div class="form-group">

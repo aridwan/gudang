@@ -40,7 +40,7 @@ class DepartemenController extends Controller
     public function store(Request $request)
     {
         $data = $request->all();
-        dd($data);
+        // dd($data);
         Departemen::create($data);
         return redirect()->action('DepartemenController@index');
     }

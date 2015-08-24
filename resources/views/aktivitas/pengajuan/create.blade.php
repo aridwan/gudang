@@ -31,7 +31,7 @@
                 <div class="form-group">
                     <label class="col-md-4 control-label">Nama Pengaju</label>
                     <div class="col-md-6">
-                        <input class="form-control" placeholder="Nama Pengaju" name="pengaju" type="text" value="{{Auth::user()->name}}" readonly>
+                        <input class="form-control" placeholder="Nama Pengaju" name="pengaju" type="text" value="{{Auth::user()->nama}}" readonly>
                     </div>
                 </div>
                 <div class="form-group">
