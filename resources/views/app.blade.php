@@ -74,6 +74,15 @@
                         </li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                                Data Departemen<span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li>{!!link_to('departemen/index', 'List')!!}</li>
+                                <li>{!!link_to('departemen/create', 'Tambah')!!}</li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
                                 Aktivitas<span class="caret"></span>
                             </a>
                             <ul class="dropdown-menu" role="menu">
