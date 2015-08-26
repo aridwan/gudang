@@ -94,7 +94,7 @@
         function appendRow() {
             $("#tabelForm").append($("<tr />").append(
                             $("<td />").append(
-                                $('<select id="tes" class="selectized" name="barpes['+ iter +'][barang_id]">')
+                                $('<select id="tes'+iter+'" class="selectized" name="barpes['+ iter +'][barang_id]">')
                                     @foreach($data as $row)
                                         .append('<option value="{{$row['id']}}">{{$row['id'].' - '.$row['nama']}}')
                                     @endforeach
@@ -110,7 +110,8 @@
         }
 
         function on(){
-            $('.selectized').selectize({
+//            window.alert(iter-1);
+            $('#tes'+(iter-1)).selectize({
                 create:true,
                 sortField: 'text'
             });
