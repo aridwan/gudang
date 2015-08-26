@@ -35,12 +35,6 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="col-md-4 control-label">Kuantitas</label>
-                        <div class="col-md-6">
-                            <input class="form-control" name="kuantitas" type="text" value="{{$data->kuantitas}}">
-                        </div>
-                    </div>
-                    <div class="form-group">
                         <label class="col-md-4 control-label">Keterangan </label>
                         <div class="col-md-6">
                             <input class="form-control" name="keterangan" type="text" value="{{$data->keterangan}}">

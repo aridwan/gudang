@@ -16,6 +16,8 @@ class CreateBarangsTable extends Migration
             $table->increments('id');
             $table->string('nama');
             $table->integer('kuantitas');
+            $table->integer('pemakaian');
+            $table->integer('pengadaan');
             $table->string('keterangan');
             $table->boolean('used')->default(0);
             $table->timestamps();

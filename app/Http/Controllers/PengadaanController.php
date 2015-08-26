@@ -81,7 +81,9 @@ class PengadaanController extends Controller
         try{
             foreach($all['barpeng'] as $barpeng) {
                 $addedItem = Barang::find($barpeng['barang_id']);
-                $addedItem['kuantitas'] += $barpeng['kuantitas'];
+                $addedItem['pengadaan'] += $barpeng['kuantitas'];
+                $addedItem->save();
+//                dd($addedItem);
                 Barang::find($barpeng['barang_id'])->update($addedItem->toArray());
                 $barang_id = array_pull($barpeng, 'barang_id');
                 $pengadaan->barangs()->attach($barang_id, $barpeng);

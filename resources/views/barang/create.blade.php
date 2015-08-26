@@ -29,7 +29,7 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <label class="col-md-4 control-label">Kuantitas</label>
+                    <label class="col-md-4 control-label">Stok Awal</label>
                     <div class="col-md-6">
                         <input class="form-control" placeholder="Kuantitas" name="kuantitas" type="text">
                     </div>

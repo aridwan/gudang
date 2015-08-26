@@ -21,7 +21,9 @@ class BarangController extends Controller
             'id',
             'nama',
             'kuantitas',
-            'keterangan'
+            'keterangan',
+            'pengadaan',
+            'pemakaian'
         ])->toArray();
         //return view('pre', compact('data'));
         return view('barang.index', compact('data'));

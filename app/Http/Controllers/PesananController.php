@@ -154,7 +154,8 @@ class PesananController extends Controller
             foreach($list as $data)
             {
                 $check = Barang::find($data['barang_id']);
-                $check['kuantitas'] -= $data['kuantitas'];
+//                $check['kuantitas'] -= $data['kuantitas'];
+                $check['pemakaian'] += $data['kuantitas'];
                 $check->save();
             }
             $pesanan = PesananBarang::find($id);
