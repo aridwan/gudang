@@ -89,19 +89,20 @@ class PesananController extends Controller
     public function store(Request $request)
     {
         $all = $request->all();
-//         dd($all['barpes']);
+         dd($all);
 
         $pesananFill = $this->pesananBarang->getFillable();
         $pesanan = $this->pesananBarang->Create($request->only($pesananFill));
 
 //         dd($all, is_numeric($all['barpes'][0]['kuantitas']));
-        foreach($all['barpes'] as $barpes) {
+        foreach($all['barpes'] as $barpes){
             if(is_numeric($barpes['kuantitas']))
             {
                 $barangTerpakai = Barang::find($barpes['barang_id']);
                 $barangTerpakai->used = '1';
                 $barangTerpakai->save();
                 $barang_id = array_pull($barpes, 'barang_id');
+//                dd($barang_id);
                 $pesanan->barangs()->attach($barang_id, $barpes);
                 return redirect('pesanan/index');
             }

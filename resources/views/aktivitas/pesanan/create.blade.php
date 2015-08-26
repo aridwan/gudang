@@ -14,6 +14,7 @@
 @endsection
 
 @section('content')
+    <br>
     <div class="well well-sm">
         <ul class="nav nav-pills nav-justified">
             <li>{!!link_to('pesanan/index','List')!!}</li>
@@ -88,14 +89,15 @@
 @section('js')
     {!! HTML::script('js/bootstrap-datepicker.js') !!}
     <script id="jsource" type="text/javascript">
+
         var iter = 0;
         function appendRow() {
             $("#tabelForm").append($("<tr />").append(
-                    $("<td />").append(
-                            $('<select class="form-control" name="barpes['+ iter +'][barang_id]" />')
-                                @foreach($data as $row)
-                                    .append('<option value="{{$row['id']}}">{{$row['id'].' - '.$row['nama'].'          '.'('.$row['kuantitas'].')'}}</option>')
-                                @endforeach
+                            $("<td />").append(
+                                $('<select id="tes" class="selectized" name="barpes['+ iter +'][barang_id]">')
+                                    @foreach($data as $row)
+                                        .append('<option value="{{$row['id']}}">{{$row['id'].' - '.$row['nama']}}')
+                                    @endforeach
                             ),
                             $("<td />").append('<input type="text" class="form-control" name="barpes['+ iter +'][kuantitas]">'),
                             $("<td />").append('<input data-provide="datepicker" class="datepicker form-control" placeholder="2017-12-31" name="barpes['+ iter +'][tanggal_butuh]">'),
@@ -104,12 +106,22 @@
                             })
                     ));
             iter = iter+1;
+            on();
+        }
+
+        function on(){
+            $(".selectized").selectize({
+                create:true,
+                sortField: 'text'
+            });
         }
         $(".btn-tambah").click(function() {
             appendRow();
+
         });
+
         $(document).ready(function(){
-            // appendRow();
+           // appendRow();
         });
     </script>
 @endsection

@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Anggota;
 use App\User;
 use Illuminate\Http\Request;
+use App\Departemen;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
@@ -39,7 +40,8 @@ class AnggotaController extends Controller
      */
     public function create()
     {
-        return view('anggota.create');
+        $data = Departemen::all();
+        return view('anggota.create', compact('data'));
     }
 
     /**

@@ -18,8 +18,8 @@
     {{--{!! HTML::style('css/jquery-ui.theme.min.css') !!}--}}
     {{--{!! HTML::style('css/jquery.appendGrid-1.5.2.css') !!}--}}
     {!! HTML::script('js/jquery.min.js') !!}
-    {!! HTML::script('js/chosen.jquery.min.js') !!}
-    {!! HTML::style('css/chosen.min.css') !!}
+    {!! HTML::script('js/selectize.js') !!}
+    {!! HTML::style('css/selectize.css') !!}
     @yield('css')
     {{--{!! HTML::style('css/my-style.css') !!}--}}
 
