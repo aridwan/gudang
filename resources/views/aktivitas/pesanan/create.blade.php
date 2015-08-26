@@ -94,7 +94,7 @@
         function appendRow() {
             $("#tabelForm").append($("<tr />").append(
                             $("<td />").append(
-                                $('<select id="tes" class="selectized" name="barpes['+ iter +'][barang_id]">')
+                                $('<select id="tes'+iter+'" class="selectized" name="barpes['+ iter +'][barang_id]">')
                                     @foreach($data as $row)
                                         .append('<option value="{{$row['id']}}">{{$row['id'].' - '.$row['nama']}}')
                                     @endforeach
@@ -106,18 +106,18 @@
                             })
                     ));
             iter = iter+1;
-            on();
+            
         }
 
         function on(){
-            $('.selectized').selectize({
+            $('#tes'+iter).selectize({
                 create:true,
                 sortField: 'text'
             });
         }
         $(".btn-tambah").click(function() {
             appendRow();
-
+            on();
         });
 
         $(document).ready(function(){

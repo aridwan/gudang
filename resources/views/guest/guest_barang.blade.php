@@ -16,14 +16,14 @@
                         <tr>
                             <th class="text-center">Kode</th>
                             <th class="text-center">Nama</th>
-                            <th class="text-center">Kuantitas</th>
+                            <th class="text-center">Jumlah Barang Tersedia</th>
                             <th class="text-center">Keterangan</th>
                         </tr>
                         @foreach($data as $row)
                             <tr class="text-center">
                                 <td>{{$row['id']}}</td>
                                 <td>{{$row['nama']}}</td>
-                                <td>{{$row['kuantitas']}}</td>
+                                <td>{{$row['kuantitas']+$row['pengadaan']-$row['pemakaian']}}</td>
                                 <td>{{$row['keterangan']}}</td>
                             </tr>
                         @endforeach
