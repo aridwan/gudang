@@ -5,8 +5,7 @@
 @endsection
 
 @section('content')
-    <br>
-        
+    <br>      
     <div class="well well-sm">
         <ul class="nav nav-pills nav-justified">
             <li class="active">{!!link_to('pesanan/index','List')!!}</li>

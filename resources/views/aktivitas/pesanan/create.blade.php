@@ -14,6 +14,7 @@
 @endsection
 
 @section('content')
+    <br>
     <div class="well well-sm">
         <ul class="nav nav-pills nav-justified">
             <li>{!!link_to('pesanan/index','List')!!}</li>
