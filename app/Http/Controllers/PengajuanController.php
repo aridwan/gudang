@@ -22,7 +22,7 @@ class PengajuanController extends Controller
     public function index()
     {
         $data = PengajuanBarang::all();
-        $pengajuanuser = DB::table('pengajuan_barangs')->where('pengaju','=',Auth::user()->name)->get();
+        $pengajuanuser = DB::table('pengajuan_barangs')->where('pengaju','=',Auth::user()->nama)->get();
         return view('aktivitas.pengajuan.index', compact('data','pengajuanuser'));
     }
 
