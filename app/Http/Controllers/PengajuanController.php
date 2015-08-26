@@ -22,7 +22,7 @@ class PengajuanController extends Controller
     public function index()
     {
         $data = PengajuanBarang::all();
-        $pengajuanuser = DB::table('pengajuan_barangs')->where('pengaju','=',Auth::user()->name)->get();
+        $pengajuanuser = DB::table('pengajuan_barangs')->where('pengaju','=',Auth::user()->nama)->get();
         return view('aktivitas.pengajuan.index', compact('data','pengajuanuser'));
     }
 
@@ -78,9 +78,16 @@ class PengajuanController extends Controller
     public function store(Request $request)
     {
         $fill = $request->all();
-        PengajuanBarang::create($fill);
-        //dd($fill);
-        return redirect()->action('PengajuanController@index');
+        if(is_numeric($fill['kuantitas']))
+        {
+            PengajuanBarang::create($fill);
+            //dd($fill);
+            return redirect()->action('PengajuanController@index');
+        }
+        else
+        {
+            return redirect()->back()->withErrors(['Kuantitas harus berupa angka']);
+        }
     }
 
     /**

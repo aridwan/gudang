@@ -36,7 +36,7 @@ class PesananController extends Controller
     public function index()
     {
         $data = PesananBarang::all();
-        $pesananuser = DB::table('pesanan_barangs')->where('pemesan','=',Auth::user()->name)->get();
+        $pesananuser = DB::table('pesanan_barangs')->where('pemesan','=',Auth::user()->nama)->get();
 //        dd($pesananuser);
         return view('aktivitas.pesanan.index', compact('data','pesananuser'));
     }
@@ -62,22 +62,6 @@ class PesananController extends Controller
             return redirect()->back()->withErrors(['Data barang kosong, silahkan mengisi Form Pengajuan Barang terlebih dahulu!']);
         }
 
-        foreach($all['barpes'] as $barpes) {
-            if(is_numeric($barpes['kuantitas']))
-            {
-                $barangTerpakai = Barang::find($barpes['barang_id']);
-                $barangTerpakai->used = '1';
-                $barangTerpakai->save();
-                $barang_id = array_pull($barpes, 'barang_id');
-                $pesanan->barangs()->attach($barang_id, $barpes);
-                return redirect('pesanan/index');
-            }
-            else
-            {
-                return redirect()->back()->withErrors(['Kuantitas harus berupa angka']);
-            }
-        }
-
     }
 
     /**
@@ -89,7 +73,7 @@ class PesananController extends Controller
     public function store(Request $request)
     {
         $all = $request->all();
-         dd($all);
+//         dd($all);
 
         $pesananFill = $this->pesananBarang->getFillable();
         $pesanan = $this->pesananBarang->Create($request->only($pesananFill));
