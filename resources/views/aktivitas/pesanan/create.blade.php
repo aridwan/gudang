@@ -110,8 +110,7 @@
         }
 
         function on(){
-//            window.alert(iter-1);
-            $('#tes'+(iter-1)).selectize({
+            $('#tes'+iter).selectize({
                 create:true,
                 sortField: 'text'
             });
