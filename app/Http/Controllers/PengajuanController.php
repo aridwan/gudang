@@ -34,6 +34,22 @@ class PengajuanController extends Controller
     public function create()
     {
         return view('aktivitas.pengajuan.create');
+
+        // foreach($all['barju'] as $barju) {
+        //     if(is_numeric($barju['kuantitas']))
+        //     {
+        //         $barangTerpakai = Barang::find($barju['barang_id']);
+        //         $barangTerpakai->used = '1';
+        //         $barangTerpakai->save();
+        //         $barang_id = array_pull($barju, 'barang_id');
+        //         $pesanan->barangs()->attach($barang_id, $barju);
+        //         return redirect('pesanan/index');
+        //     }
+        //     else
+        //     {
+        //         return redirect()->back()->withErrors(['Kuantitas harus berupa angka']);
+        //     }
+        // }
     }
 
     public function diterima($id)

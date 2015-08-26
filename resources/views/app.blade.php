@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+    <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="http://localhost/gudang/public/images/favicon.ico" />
+    <!-- <link rel="shortcut icon" href="localhost/gudang/public/image/favicon.ico"> -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
