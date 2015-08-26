@@ -106,7 +106,7 @@
                             })
                     ));
             iter = iter+1;
-            on();
+            
         }
 
         function on(){
@@ -118,7 +118,7 @@
         }
         $(".btn-tambah").click(function() {
             appendRow();
-
+            on();
         });
 
         $(document).ready(function(){
