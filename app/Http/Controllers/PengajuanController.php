@@ -62,9 +62,16 @@ class PengajuanController extends Controller
     public function store(Request $request)
     {
         $fill = $request->all();
-        PengajuanBarang::create($fill);
-        //dd($fill);
-        return redirect()->action('PengajuanController@index');
+        if(is_numeric($fill['kuantitas']))
+        {
+            PengajuanBarang::create($fill);
+            //dd($fill);
+            return redirect()->action('PengajuanController@index');
+        }
+        else
+        {
+            return redirect()->back()->withErrors(['Kuantitas harus berupa angka']);
+        }
     }
 
     /**
