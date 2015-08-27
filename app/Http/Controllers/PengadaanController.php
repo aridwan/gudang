@@ -80,7 +80,11 @@ class PengadaanController extends Controller
         // dd($all);
         try{
             foreach($all['barpeng'] as $barpeng) {
-                if(is_numeric($barpeng['kuantitas']))
+                if(!is_numeric($barpeng['kuantitas']))
+                {
+                    return redirect()->back()->withErrors(['Kuantitas harus berupa angka']);
+                }
+                else
                 {
                     $addedItem = Barang::find($barpeng['barang_id']);
                     $addedItem['pengadaan'] += $barpeng['kuantitas'];
@@ -89,13 +93,9 @@ class PengadaanController extends Controller
                     Barang::find($barpeng['barang_id'])->update($addedItem->toArray());
                     $barang_id = array_pull($barpeng, 'barang_id');
                     $pengadaan->barangs()->attach($barang_id, $barpeng);
-                    return redirect('pengadaan/index');
-                }
-                else
-                {
-                    return redirect()->back()->withErrors(['Kuantitas harus berupa angka']);
                 }
             }
+            return redirect('pengadaan/index');
         }
         catch(Exception $e)
         {
