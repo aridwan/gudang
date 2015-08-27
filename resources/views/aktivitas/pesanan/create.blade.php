@@ -96,7 +96,7 @@
                             $("<td />").append(
                                 $('<select id="tes'+iter+'" class="selectized" name="barpes['+ iter +'][barang_id]">')
                                     @foreach($data as $row)
-                                        .append('<option value="{{$row['id']}}">{{$row['id'].' - '.$row['nama']}}')
+                                        .append('<option value="{{$row['id']}}">{{$row['id'].' - '.$row['nama'].' ('.($row['kuantitas']+$row['pengadaan']-$row['pemakaian'].')')}}')
                                     @endforeach
                             ),
                             $("<td />").append('<input type="text" class="form-control" name="barpes['+ iter +'][kuantitas]">'),
