@@ -1092,11 +1092,13 @@ body {
   font-size: 14px;
   line-height: 1.42857143;
   color: #555555;
+  background-image: url("http://localhost/gudang/public/images/background gabung3.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;/*
   background-image: url("http://localhost/gudang/public/images/PLN gudang2.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: 870px 370px;
-    
+  background-position: 870px 370px;*/  
   background-color: #ffffff;
 }
 input,
