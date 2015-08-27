@@ -26,7 +26,7 @@
                         <tr>
                             <th class="text-center">Kode</th>
                             <th class="text-center">Nama</th>
-                            <th class="text-center">Keterangan</th>
+                            <th class="text-center">Satuan</th>
                             <th class="text-center">Stok Awal</th>
                             <th class="text-center">Pengadaan</th>
                             <th class="text-center">Pemakaian</th>

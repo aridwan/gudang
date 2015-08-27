@@ -78,9 +78,17 @@ class PesananController extends Controller
         $pesananFill = $this->pesananBarang->getFillable();
         $pesanan = $this->pesananBarang->Create($request->only($pesananFill));
 
-//         dd($all, is_numeric($all['barpes'][0]['kuantitas']));
+//         dd($all['barpes']);
         foreach($all['barpes'] as $barpes){
-            if(is_numeric($barpes['kuantitas']))
+            if(!is_numeric($barpes['kuantitas']))
+            {
+                return redirect()->back()->withErrors(['Kuantitas harus berupa angka']);
+            }
+            elseif($barpes['barang_id'] == null)
+            {
+                return redirect()->back()->withErrors(['Kode barang tidak boleh kosong']);
+            }
+            else
             {
                 $barangTerpakai = Barang::find($barpes['barang_id']);
                 $barangTerpakai->used = '1';
@@ -88,14 +96,9 @@ class PesananController extends Controller
                 $barang_id = array_pull($barpes, 'barang_id');
 //                dd($barang_id);
                 $pesanan->barangs()->attach($barang_id, $barpes);
-                return redirect('pesanan/index');
-            }
-            else
-            {
-                return redirect()->back()->withErrors(['Kuantitas harus berupa angka']);
             }
         }
-
+        return redirect('pesanan/index');
     }
 
     /**
@@ -144,8 +147,8 @@ class PesananController extends Controller
         foreach($list as $data)
         {
             $check = Barang::find($data['barang_id']);
-//            dd($check['kuantitas'],$list,$data['kuantitas']);
-                if($check['kuantitas'] >= $data['kuantitas'])
+//            dd($check['kuantitas']+$check['pengadaan']-$check['pemakaian'],$list,$data['kuantitas']);
+                if($check['kuantitas']+$check['pengadaan']-$check['pemakaian'] >= $data['kuantitas'])
                 $checklist++;
         }
 //        dd($checklist, $length);
