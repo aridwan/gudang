@@ -77,7 +77,9 @@ class DepartemenController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $data = $request->all();
+        Departemen::find($id)->update($data);
+        return redirect()->action('DepartemenController@index');
     }
 
     /**
