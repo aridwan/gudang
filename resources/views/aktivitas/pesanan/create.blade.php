@@ -89,7 +89,6 @@
 @section('js')
     {!! HTML::script('js/bootstrap-datepicker.js') !!}
     <script id="jsource" type="text/javascript">
-
         var iter = 0;
         function appendRow() {
             $("#tabelForm").append($("<tr />").append(

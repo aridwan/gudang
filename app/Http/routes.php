@@ -75,6 +75,15 @@ Route::group(['middleware' => ['auth']], function() {
     Route::post('guest_password/update/{id}', 'UserController@passwordUpdate');
 
     Route::get('help/index', 'HelpController@index');
+
+    Route::get('laporanpesanan/index', 'LaporanPesananController@index');
+    Route::get('laporanpesanan/create', 'LaporanPesananController@create');
+    Route::post('laporanpesanan/store', 'LaporanPesananController@store');
+    Route::get('laporanpesanan/destroy/{id}', 'LaporanPesananController@destroy');
+    Route::get('laporanpesanan/edit/{id}', 'LaporanPesananController@edit');
+    Route::post('laporanpesanan/update/{id}', 'LaporanPesananController@update');
+    Route::post('laporanpesanan/show', 'LaporanPesananController@show');
+
     // Route::get('help/create', 'HelpController@create');
     // Route::post('help/store', 'HelpController@store');
     // Route::get('help/destroy/{id}', 'HelpController@destroy');
