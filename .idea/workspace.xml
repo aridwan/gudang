@@ -29,11 +29,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="show.blade.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/views/laporan/show.blade.php">
+      <file leaf-file-name="show.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/laporanpesanan/show.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.33693695" vertical-offset="544" max-vertical-offset="1258">
-              <caret line="43" column="38" selection-start-line="43" selection-start-column="38" selection-end-line="43" selection-end-column="38" />
+            <state vertical-scroll-proportion="-5.8846154" vertical-offset="544" max-vertical-offset="1258">
+              <caret line="41" column="30" selection-start-line="41" selection-start-column="30" selection-end-line="41" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/app.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-11.038462" vertical-offset="1532" max-vertical-offset="3077">
+              <caret line="107" column="41" selection-start-line="107" selection-start-column="41" selection-end-line="107" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/laporanpengadaan/index.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-7.6153846" vertical-offset="669" max-vertical-offset="1479">
+              <caret line="51" column="30" selection-start-line="51" selection-start-column="30" selection-end-line="51" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="show.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/laporanpengadaan/show.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0" vertical-offset="510" max-vertical-offset="1224">
+              <caret line="30" column="62" selection-start-line="30" selection-start-column="62" selection-end-line="30" selection-end-column="62" />
               <folding />
             </state>
           </provider>
@@ -49,34 +79,51 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/help/index.blade.php">
+      <file leaf-file-name="LaporanPesananController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/LaporanPesananController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.423077" vertical-offset="0" max-vertical-offset="527">
-              <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
-              <folding />
+            <state vertical-scroll-proportion="-11.115385" vertical-offset="1955" max-vertical-offset="2516">
+              <caret line="130" column="63" selection-start-line="130" selection-start-column="49" selection-end-line="130" selection-end-column="63" />
+              <caret line="131" column="64" selection-start-line="131" selection-start-column="48" selection-end-line="131" selection-end-column="64" />
+              <caret line="132" column="64" selection-start-line="132" selection-start-column="49" selection-end-line="132" selection-end-column="64" />
+              <folding>
+                <element signature="e#40#62#0#PHP" expanded="true" />
+                <marker date="1443338674470" expanded="true" signature="1314:1779" placeholder="SELECT * FRO..pesanan_barangs..." />
+                <marker date="1443338674470" expanded="true" signature="2730:3169" placeholder="SELECT * FRO..pesanan_barangs..." />
+                <marker date="1443338674470" expanded="true" signature="2730:3234" placeholder="SELECT pesan..pesanan_barangs..." />
+                <marker date="1443338674470" expanded="true" signature="2730:3304" placeholder="SELECT * FRO..pesanan_barangs..." />
+                <marker date="1443338674470" expanded="true" signature="2730:3304" placeholder="SELECT * FRO..pesanan_barangs..." />
+                <marker date="1443338674470" expanded="true" signature="2730:3304" placeholder="SELECT pesan..pesanan_barangs..." />
+                <marker date="1443338674470" expanded="true" signature="2730:3304" placeholder="SELECT pesan..pesanan_barangs..." />
+                <marker date="1443338674470" expanded="true" signature="2730:3312" placeholder="SELECT pesan..pesanan_barangs..." />
+                <marker date="1443338674470" expanded="true" signature="2730:3325" placeholder="SELECT * FRO..pesanan_barangs..." />
+                <marker date="1443338674470" expanded="true" signature="2730:3336" placeholder="SELECT pesan..pesanan_barangs..." />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LaporanPesananController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/LaporanPesananController.php">
+      <file leaf-file-name="LaporanPengadaanController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/LaporanPengadaanController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.6538463" vertical-offset="1927" max-vertical-offset="2516">
-              <caret line="122" column="99" selection-start-line="122" selection-start-column="99" selection-end-line="122" selection-end-column="99" />
+            <state vertical-scroll-proportion="2.3477478" vertical-offset="737" max-vertical-offset="2414">
+              <caret line="120" column="30" selection-start-line="120" selection-start-column="30" selection-end-line="120" selection-end-column="30" />
               <folding>
-                <element signature="e#40#62#0#PHP" expanded="true" />
-                <marker date="1443335445364" expanded="true" signature="1307:1772" placeholder="SELECT * FRO..pesanan_barangs..." />
-                <marker date="1443335445364" expanded="true" signature="2716:3155" placeholder="SELECT * FRO..pesanan_barangs..." />
-                <marker date="1443335445364" expanded="true" signature="2716:3220" placeholder="SELECT pesan..pesanan_barangs..." />
-                <marker date="1443335445364" expanded="true" signature="2716:3290" placeholder="SELECT * FRO..pesanan_barangs..." />
-                <marker date="1443335445364" expanded="true" signature="2716:3290" placeholder="SELECT * FRO..pesanan_barangs..." />
-                <marker date="1443335445364" expanded="true" signature="2716:3290" placeholder="SELECT pesan..pesanan_barangs..." />
-                <marker date="1443335445364" expanded="true" signature="2716:3290" placeholder="SELECT pesan..pesanan_barangs..." />
-                <marker date="1443335445364" expanded="true" signature="2716:3298" placeholder="SELECT pesan..pesanan_barangs..." />
-                <marker date="1443335445364" expanded="true" signature="2716:3311" placeholder="SELECT * FRO..pesanan_barangs..." />
-                <marker date="1443335445364" expanded="true" signature="2716:3322" placeholder="SELECT pesan..pesanan_barangs..." />
+                <element signature="e#40#64#0#PHP" expanded="true" />
+                <marker date="1443348598178" expanded="true" signature="1248:1719" placeholder="SELECT * FRO..pesanan_barangs..." />
+                <marker date="1443348598178" expanded="true" signature="2630:2653" placeholder="SELECT pesan..pesanan_barangs..." />
+                <marker date="1443348598178" expanded="true" signature="2630:3188" placeholder="SELECT * FRO..pesanan_barangs..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2015_08_07_033038_create_pengadaan_barangs_table.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/migrations/2015_08_07_033038_create_pengadaan_barangs_table.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="646">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -91,54 +138,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2015_08_07_040855_create_barang_terpesans_table.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/migrations/2015_08_07_040855_create_barang_terpesans_table.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.6153846" vertical-offset="0" max-vertical-offset="663">
-              <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2015_08_07_033016_create_pesanan_barangs_table.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/migrations/2015_08_07_033016_create_pesanan_barangs_table.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.230769" vertical-offset="40" max-vertical-offset="680">
-              <caret line="19" column="52" selection-start-line="19" selection-start-column="52" selection-end-line="19" selection-end-column="52" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PesananController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/PesananController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.461538" vertical-offset="2896" max-vertical-offset="3553">
-              <caret line="203" column="6" selection-start-line="203" selection-start-column="6" selection-end-line="203" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.576923" vertical-offset="1043" max-vertical-offset="1768">
-              <caret line="85" column="15" selection-start-line="85" selection-start-column="15" selection-end-line="85" selection-end-column="15" />
+            <state vertical-scroll-proportion="-9.576923" vertical-offset="1043" max-vertical-offset="1921">
+              <caret line="85" column="38" selection-start-line="85" selection-start-column="38" selection-end-line="85" selection-end-column="38" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AnggotaController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AnggotaController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-20.038462" vertical-offset="1791" max-vertical-offset="2414">
-              <caret line="136" column="0" selection-start-line="136" selection-start-column="0" selection-end-line="136" selection-end-column="0" />
-              <folding>
-                <element signature="e#40#56#0#PHP" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -148,9 +153,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/BarangTerima.php" />
-        <option value="$PROJECT_DIR$/app/PengadaanBarang.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2015_08_10_043128_create_barang_terimas_table.php" />
         <option value="$PROJECT_DIR$/resources/views/aktivitas/pengadaan/show.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Requests/CreatePesananRequest.php" />
         <option value="$PROJECT_DIR$/app/Anggota.php" />
@@ -185,7 +187,6 @@
         <option value="$PROJECT_DIR$/resources/views/aktivitas/pengadaan/create.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/PengadaanController.php" />
         <option value="$PROJECT_DIR$/resources/views/barang/index.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/app.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/aktivitas/pesanan/create.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/laporan/index.blade.php" />
         <option value="$PROJECT_DIR$/composer.json" />
@@ -196,9 +197,13 @@
         <option value="$PROJECT_DIR$/resources/views/anggota/edit.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/guest/guest_password.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/PesananController.php" />
-        <option value="$PROJECT_DIR$/app/Http/routes.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/LaporanPesananController.php" />
         <option value="$PROJECT_DIR$/resources/views/laporan/show.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/app.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/laporanpengadaan/index.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/routes.php" />
+        <option value="$PROJECT_DIR$/resources/views/laporanpengadaan/show.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/LaporanPengadaanController.php" />
       </list>
     </option>
   </component>
@@ -311,7 +316,29 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="laporan" />
+              <option name="myItemId" value="laporanpesanan" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gudang_atk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gudang" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="laporanpengadaan" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -632,7 +659,7 @@
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/xampp/htdocs/gudang/resources/views/laporan/show.blade.php&#10;route&#9;FILE&#9;file://C:/xampp/htdocs/gudang/app/Http/routes.php&#10;c&#9;FILE&#9;file://C:/xampp/htdocs/gudang/resources/views/anggota/create.blade.php&#10;show&#9;FILE&#9;file://C:/xampp/htdocs/gudang/resources/views/laporan/show.blade.php&#10;barangterta&#9;null&#9;null&#10;barante&#9;null&#9;null&#10;pesatab&#9;FILE&#9;file://C:/xampp/htdocs/gudang/database/migrations/2015_08_07_033016_create_pesanan_barangs_table.php&#10;lap/show&#9;FILE&#9;file://C:/xampp/htdocs/gudang/resources/views/laporan/show.blade.php&#10;lapor/sj&#9;null&#9;null&#10;control&#9;FILE&#9;file://C:/xampp/htdocs/gudang/app/Http/Controllers/PesananController.php&#10;contro&#9;FILE&#9;file://C:/xampp/htdocs/gudang/app/Http/Controllers/AnggotaController.php&#10;rout&#9;FILE&#9;file://C:/xampp/htdocs/gudang/app/Http/routes.php&#10;pesanan/crea&#9;FILE&#9;file://C:/xampp/htdocs/gudang/resources/views/aktivitas/pesanan/create.blade.php&#10;anggocon&#9;FILE&#9;file://C:/xampp/htdocs/gudang/app/Http/Controllers/AnggotaController.php&#10;app&#9;FILE&#9;file://C:/xampp/htdocs/gudang/resources/views/app.blade.php&#10;routes&#9;FILE&#9;file://C:/xampp/htdocs/gudang/app/Http/routes.php&#10;index&#9;FILE&#9;file://C:/xampp/htdocs/gudang/resources/views/barang/index.blade.php&#10;lapo&#9;FILE&#9;file://C:/xampp/htdocs/gudang/app/Http/Controllers/LaporanPesananController.php&#10;sho&#9;FILE&#9;file://C:/xampp/htdocs/gudang/resources/views/laporan/show.blade.php&#10;laporan&#9;null&#9;null&#10;laporancon&#9;FILE&#9;file://C:/xampp/htdocs/gudang/app/Http/Controllers/LaporanPesananController.php&#10;authe&#9;null&#9;null&#10;login&#9;FILE&#9;file://C:/xampp/htdocs/gudang/resources/views/auth/login.blade.php&#10;excel&#9;null&#9;null&#10;config/app&#9;FILE&#9;file://C:/xampp/htdocs/gudang/config/app.php&#10;composer.json&#9;FILE&#9;file://C:/xampp/htdocs/gudang/composer.json&#10;ind&#9;FILE&#9;file://C:/xampp/htdocs/gudang/resources/views/laporan/index.blade.php&#10;lapora&#9;FILE&#9;file://C:/xampp/htdocs/gudang/app/Http/Controllers/LaporanPesananController.php&#10;datepick&#9;FILE&#9;file://C:/xampp/htdocs/gudang/public/css/bootstrap-datepicker.css&#10;lapcon&#9;FILE&#9;file://C:/xampp/htdocs/gudang/app/Http/Controllers/LaporanPesananController.php&#10;pesa/cre&#9;FILE&#9;file://C:/xampp/htdocs/gudang/resources/views/aktivitas/pesanan/create.blade.php&#10;create&#9;FILE&#9;file://C:/xampp/htdocs/gudang/resources/views/barang/create.blade.php&#10;crea&#9;FILE&#9;file://C:/xampp/htdocs/gudang/resources/views/aktivitas/pesanan/create.blade.php&#10;inde&#9;FILE&#9;file://C:/xampp/htdocs/gudang/resources/views/aktivitas/pesanan/index.blade.php&#10;laporanpe&#9;null&#9;null&#10;pesa/crea&#9;FILE&#9;file://C:/xampp/htdocs/gudang/resources/views/aktivitas/pesanan/create.blade.php&#10;bara/ind&#9;FILE&#9;file://C:/xampp/htdocs/gudang/resources/views/barang/index.blade.php&#10;pescon&#9;null&#9;null&#10;pesacon&#9;FILE&#9;file://C:/xampp/htdocs/gudang/app/Http/Controllers/PesananController.php&#10;pengacon&#9;FILE&#9;file://C:/xampp/htdocs/gudang/app/Http/Controllers/PengadaanController.php&#10;penga/cre&#9;FILE&#9;file://C:/xampp/htdocs/gudang/resources/views/aktivitas/pengadaan/create.blade.php&#10;pesananbara&#9;null&#9;null&#10;penga/crea&#9;FILE&#9;file://C:/xampp/htdocs/gudang/resources/views/aktivitas/pengadaan/create.blade.php&#10;pesa/creat&#9;FILE&#9;file://C:/xampp/htdocs/gudang/resources/views/aktivitas/pesanan/create.blade.php&#10;barancon&#9;FILE&#9;file://C:/xampp/htdocs/gudang/app/Http/Controllers/BarangController.php&#10;baracon&#9;FILE&#9;file://C:/xampp/htdocs/gudang/app/Http/Controllers/BarangController.php&#10;barang/edit&#9;FILE&#9;file://C:/xampp/htdocs/gudang/resources/views/barang/edit.blade.php&#10;pesa&#9;FILE&#9;file://C:/xampp/htdocs/gudang/app/Http/Controllers/PesananController.php&#10;pengadaacon&#9;FILE&#9;file://C:/xampp/htdocs/gudang/app/Http/Controllers/PengadaanController.php&#10;pesanacon&#9;FILE&#9;file://C:/xampp/htdocs/gudang/app/Http/Controllers/PesananController.php" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/xampp/htdocs/gudang/app/Http/Controllers/LaporanPengadaanController.php&#10;routes&#9;FILE&#9;file://C:/xampp/htdocs/gudang/app/Http/routes.php&#10;app&#9;FILE&#9;file://C:/xampp/htdocs/gudang/resources/views/app.blade.php&#10;route&#9;FILE&#9;file://C:/xampp/htdocs/gudang/app/Http/routes.php&#10;c&#9;FILE&#9;file://C:/xampp/htdocs/gudang/resources/views/anggota/create.blade.php&#10;show&#9;FILE&#9;file://C:/xampp/htdocs/gudang/resources/views/laporan/show.blade.php&#10;barangterta&#9;null&#9;null&#10;barante&#9;null&#9;null&#10;pesatab&#9;FILE&#9;file://C:/xampp/htdocs/gudang/database/migrations/2015_08_07_033016_create_pesanan_barangs_table.php&#10;lap/show&#9;FILE&#9;file://C:/xampp/htdocs/gudang/resources/views/laporan/show.blade.php&#10;lapor/sj&#9;null&#9;null&#10;control&#9;FILE&#9;file://C:/xampp/htdocs/gudang/app/Http/Controllers/PesananController.php&#10;contro&#9;FILE&#9;file://C:/xampp/htdocs/gudang/app/Http/Controllers/AnggotaController.php&#10;rout&#9;FILE&#9;file://C:/xampp/htdocs/gudang/app/Http/routes.php&#10;pesanan/crea&#9;FILE&#9;file://C:/xampp/htdocs/gudang/resources/views/aktivitas/pesanan/create.blade.php&#10;anggocon&#9;FILE&#9;file://C:/xampp/htdocs/gudang/app/Http/Controllers/AnggotaController.php&#10;index&#9;FILE&#9;file://C:/xampp/htdocs/gudang/resources/views/barang/index.blade.php&#10;lapo&#9;FILE&#9;file://C:/xampp/htdocs/gudang/app/Http/Controllers/LaporanPesananController.php&#10;sho&#9;FILE&#9;file://C:/xampp/htdocs/gudang/resources/views/laporan/show.blade.php&#10;laporan&#9;null&#9;null&#10;laporancon&#9;FILE&#9;file://C:/xampp/htdocs/gudang/app/Http/Controllers/LaporanPesananController.php&#10;authe&#9;null&#9;null&#10;login&#9;FILE&#9;file://C:/xampp/htdocs/gudang/resources/views/auth/login.blade.php&#10;excel&#9;null&#9;null&#10;config/app&#9;FILE&#9;file://C:/xampp/htdocs/gudang/config/app.php&#10;composer.json&#9;FILE&#9;file://C:/xampp/htdocs/gudang/composer.json&#10;ind&#9;FILE&#9;file://C:/xampp/htdocs/gudang/resources/views/laporan/index.blade.php&#10;lapora&#9;FILE&#9;file://C:/xampp/htdocs/gudang/app/Http/Controllers/LaporanPesananController.php&#10;datepick&#9;FILE&#9;file://C:/xampp/htdocs/gudang/public/css/bootstrap-datepicker.css&#10;lapcon&#9;FILE&#9;file://C:/xampp/htdocs/gudang/app/Http/Controllers/LaporanPesananController.php&#10;pesa/cre&#9;FILE&#9;file://C:/xampp/htdocs/gudang/resources/views/aktivitas/pesanan/create.blade.php&#10;create&#9;FILE&#9;file://C:/xampp/htdocs/gudang/resources/views/barang/create.blade.php&#10;crea&#9;FILE&#9;file://C:/xampp/htdocs/gudang/resources/views/aktivitas/pesanan/create.blade.php&#10;inde&#9;FILE&#9;file://C:/xampp/htdocs/gudang/resources/views/aktivitas/pesanan/index.blade.php&#10;laporanpe&#9;null&#9;null&#10;pesa/crea&#9;FILE&#9;file://C:/xampp/htdocs/gudang/resources/views/aktivitas/pesanan/create.blade.php&#10;bara/ind&#9;FILE&#9;file://C:/xampp/htdocs/gudang/resources/views/barang/index.blade.php&#10;pescon&#9;null&#9;null&#10;pesacon&#9;FILE&#9;file://C:/xampp/htdocs/gudang/app/Http/Controllers/PesananController.php&#10;pengacon&#9;FILE&#9;file://C:/xampp/htdocs/gudang/app/Http/Controllers/PengadaanController.php&#10;penga/cre&#9;FILE&#9;file://C:/xampp/htdocs/gudang/resources/views/aktivitas/pengadaan/create.blade.php&#10;pesananbara&#9;null&#9;null&#10;penga/crea&#9;FILE&#9;file://C:/xampp/htdocs/gudang/resources/views/aktivitas/pengadaan/create.blade.php&#10;pesa/creat&#9;FILE&#9;file://C:/xampp/htdocs/gudang/resources/views/aktivitas/pesanan/create.blade.php&#10;barancon&#9;FILE&#9;file://C:/xampp/htdocs/gudang/app/Http/Controllers/BarangController.php&#10;baracon&#9;FILE&#9;file://C:/xampp/htdocs/gudang/app/Http/Controllers/BarangController.php&#10;barang/edit&#9;FILE&#9;file://C:/xampp/htdocs/gudang/resources/views/barang/edit.blade.php&#10;pesa&#9;FILE&#9;file://C:/xampp/htdocs/gudang/app/Http/Controllers/PesananController.php&#10;pengadaacon&#9;FILE&#9;file://C:/xampp/htdocs/gudang/app/Http/Controllers/PengadaanController.php&#10;pesanacon&#9;FILE&#9;file://C:/xampp/htdocs/gudang/app/Http/Controllers/PesananController.php" />
     <property name="options.lastSelected" value="copy.on.steroids" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
@@ -640,6 +667,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\gudang\resources\views\laporanpengadaan" />
       <recent name="C:\xampp\htdocs\gudang\resources\views\aktivitas\pengajuan" />
       <recent name="C:\xampp\htdocs\gudang_atk\resources\views\anggota" />
     </key>
@@ -698,6 +726,7 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32840723" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -708,7 +737,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -742,34 +770,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/DepartemenController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7657658" vertical-offset="0" max-vertical-offset="1649">
-          <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/PengajuanBarang.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.5384617" vertical-offset="0" max-vertical-offset="357">
-          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/PengajuanController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.576923" vertical-offset="856" max-vertical-offset="2329">
-          <caret line="73" column="6" selection-start-line="73" selection-start-column="6" selection-end-line="73" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Barang.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="357">
-          <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2015_08_05_030656_create_barangs_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-9.923077" vertical-offset="48" max-vertical-offset="697">
@@ -888,13 +888,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-13.730769" vertical-offset="170" max-vertical-offset="918">
           <caret line="31" column="21" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/app.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.8076925" vertical-offset="1600" max-vertical-offset="3094">
-          <caret line="103" column="35" selection-start-line="103" selection-start-column="35" selection-end-line="103" selection-end-column="35" />
         </state>
       </provider>
     </entry>
@@ -1030,7 +1023,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/laporan/index.blade.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/laporanpesanan/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="261" max-vertical-offset="1479">
           <caret line="33" column="51" selection-start-line="33" selection-start-column="51" selection-end-line="33" selection-end-column="51" />
@@ -1104,39 +1097,86 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/laporanpesanan/show.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.8846154" vertical-offset="544" max-vertical-offset="1258">
+          <caret line="41" column="30" selection-start-line="41" selection-start-column="30" selection-end-line="41" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/app.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.038462" vertical-offset="1532" max-vertical-offset="3077">
+          <caret line="107" column="41" selection-start-line="107" selection-start-column="41" selection-end-line="107" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.576923" vertical-offset="1043" max-vertical-offset="1768">
-          <caret line="85" column="15" selection-start-line="85" selection-start-column="15" selection-end-line="85" selection-end-column="15" />
+        <state vertical-scroll-proportion="-9.576923" vertical-offset="1043" max-vertical-offset="1921">
+          <caret line="85" column="38" selection-start-line="85" selection-start-column="38" selection-end-line="85" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/laporanpengadaan/show.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0" vertical-offset="510" max-vertical-offset="1224">
+          <caret line="30" column="62" selection-start-line="30" selection-start-column="62" selection-end-line="30" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/laporanpengadaan/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.6153846" vertical-offset="669" max-vertical-offset="1479">
+          <caret line="51" column="30" selection-start-line="51" selection-start-column="30" selection-end-line="51" selection-end-column="30" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/LaporanPesananController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.6538463" vertical-offset="1927" max-vertical-offset="2516">
-          <caret line="122" column="99" selection-start-line="122" selection-start-column="99" selection-end-line="122" selection-end-column="99" />
+        <state vertical-scroll-proportion="-11.115385" vertical-offset="1955" max-vertical-offset="2516">
+          <caret line="130" column="63" selection-start-line="130" selection-start-column="49" selection-end-line="130" selection-end-column="63" />
+          <caret line="131" column="64" selection-start-line="131" selection-start-column="48" selection-end-line="131" selection-end-column="64" />
+          <caret line="132" column="64" selection-start-line="132" selection-start-column="49" selection-end-line="132" selection-end-column="64" />
           <folding>
             <element signature="e#40#62#0#PHP" expanded="true" />
-            <marker date="1443335445364" expanded="true" signature="1307:1772" placeholder="SELECT * FRO..pesanan_barangs..." />
-            <marker date="1443335445364" expanded="true" signature="2716:3155" placeholder="SELECT * FRO..pesanan_barangs..." />
-            <marker date="1443335445364" expanded="true" signature="2716:3220" placeholder="SELECT pesan..pesanan_barangs..." />
-            <marker date="1443335445364" expanded="true" signature="2716:3290" placeholder="SELECT * FRO..pesanan_barangs..." />
-            <marker date="1443335445364" expanded="true" signature="2716:3290" placeholder="SELECT * FRO..pesanan_barangs..." />
-            <marker date="1443335445364" expanded="true" signature="2716:3290" placeholder="SELECT pesan..pesanan_barangs..." />
-            <marker date="1443335445364" expanded="true" signature="2716:3290" placeholder="SELECT pesan..pesanan_barangs..." />
-            <marker date="1443335445364" expanded="true" signature="2716:3298" placeholder="SELECT pesan..pesanan_barangs..." />
-            <marker date="1443335445364" expanded="true" signature="2716:3311" placeholder="SELECT * FRO..pesanan_barangs..." />
-            <marker date="1443335445364" expanded="true" signature="2716:3322" placeholder="SELECT pesan..pesanan_barangs..." />
+            <marker date="1443338674470" expanded="true" signature="1314:1779" placeholder="SELECT * FRO..pesanan_barangs..." />
+            <marker date="1443338674470" expanded="true" signature="2730:3169" placeholder="SELECT * FRO..pesanan_barangs..." />
+            <marker date="1443338674470" expanded="true" signature="2730:3234" placeholder="SELECT pesan..pesanan_barangs..." />
+            <marker date="1443338674470" expanded="true" signature="2730:3304" placeholder="SELECT * FRO..pesanan_barangs..." />
+            <marker date="1443338674470" expanded="true" signature="2730:3304" placeholder="SELECT * FRO..pesanan_barangs..." />
+            <marker date="1443338674470" expanded="true" signature="2730:3304" placeholder="SELECT pesan..pesanan_barangs..." />
+            <marker date="1443338674470" expanded="true" signature="2730:3304" placeholder="SELECT pesan..pesanan_barangs..." />
+            <marker date="1443338674470" expanded="true" signature="2730:3312" placeholder="SELECT pesan..pesanan_barangs..." />
+            <marker date="1443338674470" expanded="true" signature="2730:3325" placeholder="SELECT * FRO..pesanan_barangs..." />
+            <marker date="1443338674470" expanded="true" signature="2730:3336" placeholder="SELECT pesan..pesanan_barangs..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/laporan/show.blade.php">
+    <entry file="file://$PROJECT_DIR$/database/migrations/2015_08_07_033038_create_pengadaan_barangs_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33693695" vertical-offset="544" max-vertical-offset="1258">
-          <caret line="43" column="38" selection-start-line="43" selection-start-column="38" selection-end-line="43" selection-end-column="38" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="646">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/LaporanPengadaanController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.3477478" vertical-offset="737" max-vertical-offset="2414">
+          <caret line="120" column="30" selection-start-line="120" selection-start-column="30" selection-end-line="120" selection-end-column="30" />
+          <folding>
+            <element signature="e#40#64#0#PHP" expanded="true" />
+            <marker date="1443348598178" expanded="true" signature="1248:1719" placeholder="SELECT * FRO..pesanan_barangs..." />
+            <marker date="1443348598178" expanded="true" signature="2630:2653" placeholder="SELECT pesan..pesanan_barangs..." />
+            <marker date="1443348598178" expanded="true" signature="2630:3188" placeholder="SELECT * FRO..pesanan_barangs..." />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -2,29 +2,25 @@
 
 namespace App\Http\Controllers;
 
-use App\PesananBarang;
+use App\PengadaanBarang;
 use Illuminate\Http\Request;
-use Maatwebsite\Excel\Facades\Excel;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use Maatwebsite\Excel\Facades\Excel;
 use App\Barang;
-class LaporanPesananController extends Controller
+
+class LaporanPengadaanController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return Response
      */
-    protected $exportData;
-    protected $mulai;
-    protected $selesai;
-
-
     public function index()
     {
         $data = Barang::all();
-        return view('laporanpesanan.index', compact('data'));
+        return view('laporanpengadaan.index', compact('data'));
     }
 
     /**
@@ -61,22 +57,21 @@ class LaporanPesananController extends Controller
         $tanggal_mulai = $data['tanggal_mulai'];
         $tanggal_selesai = $data['tanggal_selesai'];
         $barang = $data['barang_id'];
-        $query = PesananBarang::hydrateRaw(
+        $query = PengadaanBarang::hydrateRaw(
             'SELECT
                 *
             FROM
-                pesanan_barangs,
+                pengadaan_barangs,
                 barangs,
-                barang_terpesans
+                barang_terimas
             WHERE
-                pesanan_barangs.id = barang_terpesans.pesanan_barang_id
-                AND barang_terpesans.barang_id = barangs.id
-                AND pesanan_barangs.tanggal >="'.$tanggal_mulai.'"
-                AND pesanan_barangs.tanggal <"'.$tanggal_selesai.'"
-                AND barang_terpesans.barang_id='.$barang);
-        $this->exportData = $query;
+                pengadaan_barangs.id = barang_terimas.pengadaan_barang_id
+                AND barang_terimas.barang_id = barangs.id
+                AND pengadaan_barangs.tanggal >= "'.$tanggal_mulai.'"
+                AND pengadaan_barangs.tanggal < "'.$tanggal_selesai.'"
+                AND barang_terimas.barang_id = '.$barang);
 //        dd($query->toArray());
-        return view('laporanpesanan/show', compact('query','tanggal_mulai','tanggal_selesai','barang'));
+        return view('laporanpengadaan/show', compact('query','tanggal_mulai','tanggal_selesai','barang'));
     }
 
     /**
@@ -106,8 +101,7 @@ class LaporanPesananController extends Controller
      * Remove the specified resource from storage.
      *
      * @param  int  $id
-     * @
-     * return Response
+     * @return Response
      */
     public function destroy($id)
     {
@@ -118,21 +112,21 @@ class LaporanPesananController extends Controller
     {
         $data = $request->all();
 //        dd($data);
-        $query = PesananBarang::hydrateRaw(
+        $query = PengadaanBarang::hydrateRaw(
             'SELECT
-                pesanan_barangs.pemesan,pesanan_barangs.tanggal,pesanan_barangs.id as nomor_pesanan,barang_terpesans.kuantitas
+                pengadaan_barangs.tanggal, pengadaan_barangs.id as nomor_pengadaan, barang_terimas.kuantitas
             FROM
-                pesanan_barangs,
+                pengadaan_barangs,
                 barangs,
-                barang_terpesans
+                barang_terimas
             WHERE
-                pesanan_barangs.id = barang_terpesans.pesanan_barang_id
-                AND barang_terpesans.barang_id = barangs.id
-                AND pesanan_barangs.tanggal >="'.$data['mulai'].'"
-                AND pesanan_barangs.tanggal <"'.$data['selesai'].'"
-                AND barang_terpesans.barang_id='.$data['barang'].'')->toArray();
+                pengadaan_barangs.id = barang_terimas.pengadaan_barang_id
+                AND barang_terimas.barang_id = barangs.id
+                AND pengadaan_barangs.tanggal >="'.$data['mulai'].'"
+                AND pengadaan_barangs.tanggal <"'.$data['selesai'].'"
+                AND barang_terimas.barang_id='.$data['barang'].'');
 //        dd($query);
-        Excel::create('laporanpesanan', function($excel) use($query){
+        Excel::create('laporanpengadaan', function($excel) use($query){
             $excel->sheet('Sheetname', function($sheet) use($query) {
                 $sheet->fromArray($query
                 );

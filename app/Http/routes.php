@@ -85,6 +85,15 @@ Route::group(['middleware' => ['auth']], function() {
     Route::post('laporanpesanan/show', 'LaporanPesananController@show');
     Route::post('laporanpesanan/export', 'LaporanPesananController@export');
 
+    Route::get('laporanpengadaan/index', 'LaporanPengadaanController@index');
+    Route::get('laporanpengadaan/create', 'LaporanPengadaanController@create');
+    Route::post('laporanpengadaan/store', 'LaporanPengadaanController@store');
+    Route::get('laporanpengadaan/destroy/{id}', 'LaporanPengadaanController@destroy');
+    Route::get('laporanpengadaan/edit/{id}', 'LaporanPengadaanController@edit');
+    Route::post('laporanpengadaan/update/{id}', 'LaporanPengadaanController@update');
+    Route::post('laporanpengadaan/show', 'LaporanPengadaanController@show');
+    Route::post('laporanpengadaan/export', 'LaporanPengadaanController@export');
+
     // Route::get('help/create', 'HelpController@create');
     // Route::post('help/store', 'HelpController@store');
     // Route::get('help/destroy/{id}', 'HelpController@destroy');

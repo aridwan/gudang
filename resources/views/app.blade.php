@@ -100,7 +100,6 @@
                             </a>
                             <ul class="dropdown-menu" role="menu">
                                 <li>{!!link_to('laporanpesanan/index', 'Laporan Pesanan')!!}</li>
-                                <li>{!!link_to('laporanpengajuan/index', 'Laporan Pengajuan')!!}</li>
                                 <li>{!!link_to('laporanpengadaan/index', 'Laporan Pengadaan')!!}</li>
                             </ul>
                         </li>
