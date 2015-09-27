@@ -83,6 +83,7 @@ Route::group(['middleware' => ['auth']], function() {
     Route::get('laporanpesanan/edit/{id}', 'LaporanPesananController@edit');
     Route::post('laporanpesanan/update/{id}', 'LaporanPesananController@update');
     Route::post('laporanpesanan/show', 'LaporanPesananController@show');
+    Route::post('laporanpesanan/export', 'LaporanPesananController@export');
 
     // Route::get('help/create', 'HelpController@create');
     // Route::post('help/store', 'HelpController@store');

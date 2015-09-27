@@ -89,7 +89,8 @@ class AnggotaController extends Controller
     public function edit($id)
     {
         $data = Anggota::find($id);
-        return view('anggota.edit', compact('data'));
+        $depart = Departemen::all();
+        return view('anggota.edit', compact('data','depart'));
     }
 
     /**

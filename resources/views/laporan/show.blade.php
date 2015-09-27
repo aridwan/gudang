@@ -25,11 +25,34 @@
                                 <td class="text-center">1</td>
                                 <td class="text-center">{{$row['pemesan']}}</td>
                                 <td class="text-center">{{$row['tanggal']}}</td>
-                                <td class="text-center">{{$row['id']}}</td>
+                                <td class="text-center">{{$row['pesanan_barang_id']}}</td>
                                 <td class="text-center">{{$row['kuantitas']}}</td>
                             </tr>
                         @endforeach
                     </table>
+                    {!! Form::open(['url' => 'laporanpesanan/export', 'class' => 'form-horizontal']) !!}
+                        <label class="col-md-4 control-label hidden">mulai</label>
+                        <div class="col-md-6">
+                            <input class="form-control hidden" name="mulai" type="text" value="{{$tanggal_mulai}}">
+                        </div>
+                        <label class="col-md-4 control-label hidden">selesai</label>
+                        <div class="col-md-6">
+                            <input class="form-control hidden" name="selesai" type=
+                            "text" value="{{$tanggal_selesai}}">
+                        </div>
+                        <label class="col-md-4 control-label hidden">barang</label>
+                        <div class="col-md-6">
+                            <input class="form-control hidden" name="barang" type="text" value="{{$barang}}">
+                        </div>
+                    <div class="form-group">
+                        <div class="col-md-12">
+                            <button type="submit" class="btn btn-default">
+                               Export
+                            </button>
+                        </div>
+                    </div>
+                    {{--{!!link_to('laporanpesanan/export','Export', ['class' => 'btn btn-default btn-sm'])!!}--}}
+                    {!! Form::close() !!}
                 </div>
                 @else
                     <div class="alert alert-danger">

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\PesananBarang;
 use Illuminate\Http\Request;
+use Maatwebsite\Excel\Facades\Excel;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
@@ -15,6 +16,11 @@ class LaporanPesananController extends Controller
      *
      * @return Response
      */
+    protected $exportData;
+    protected $mulai;
+    protected $selesai;
+
+
     public function index()
     {
         $data = Barang::all();
@@ -68,8 +74,9 @@ class LaporanPesananController extends Controller
                 AND pesanan_barangs.tanggal >="'.$tanggal_mulai.'"
                 AND pesanan_barangs.tanggal <"'.$tanggal_selesai.'"
                 AND barang_terpesans.barang_id='.$barang);
-//        dd($query);
-        return view('laporan/show', compact('query'));
+        $this->exportData = $query;
+//        dd($query->toArray());
+        return view('laporan/show', compact('query','tanggal_mulai','tanggal_selesai','barang'));
     }
 
     /**
@@ -105,5 +112,31 @@ class LaporanPesananController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    public function export(Request $request)
+    {
+        $data = $request->all();
+//        dd($data);
+        $query = PesananBarang::hydrateRaw(
+            'SELECT
+                pesanan_barangs.pemesan,pesanan_barangs.tanggal,pesanan_barangs.id as nomor_pesanan,barang_terpesans.kuantitas
+            FROM
+                pesanan_barangs,
+                barangs,
+                barang_terpesans
+            WHERE
+                pesanan_barangs.id = barang_terpesans.pesanan_barang_id
+                AND barang_terpesans.barang_id = barangs.id
+                AND pesanan_barangs.tanggal >="'.$data['mulai'].'"
+                AND pesanan_barangs.tanggal <"'.$data['selesai'].'"
+                AND barang_terpesans.barang_id='.$data['barang'].'')->toArray();
+//        dd($query);
+        Excel::create('laporanpesanan', function($excel) use($query){
+            $excel->sheet('Sheetname', function($sheet) use($query) {
+                $sheet->fromArray($query
+                );
+            });
+        })->export('xls');
     }
 }
