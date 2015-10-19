@@ -48,7 +48,8 @@ class BarangController extends Controller
     public function store(Request $request)
     {
         $fill = $request->all();
-        if(is_numeric($fill['kuantitas']))
+        $asd = Barang::where('nama',$fill['nama'])->firstOrFail();
+        if(is_numeric($fill['kuantitas']) && !$asd)
         {
             Barang::create($fill);
             //dd($fill);
@@ -56,7 +57,7 @@ class BarangController extends Controller
 
         }
         else{
-            return redirect()->back()->withErrors(['Kuantitas harus berupa angka!']);
+            return redirect()->back()->withErrors(['Kuantitas bukan angka atau barang sudah ada']);
         }
     }
 

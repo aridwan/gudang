@@ -64,9 +64,13 @@ class AnggotaController extends Controller
         $fill2['jabatan'] = $data['jabatan'];
 
 //        dd($fill1,$fill2);
+        $test = Anggota::where('nip',$fill1['name'])->firstOrFail();
+        if(!$test) {
             User::create($fill1);
             Anggota::create($fill2);
             return redirect()->action('AnggotaController@index');
+        }
+        else return redirect()->back()->withErrors(['NIP sudah digunakan']);
     }
 
     /**
